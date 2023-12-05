@@ -1,0 +1,291 @@
+1. <criaDadosSade>:
+
+2. <adicionaSecretarioSade>:
+
+3. <adicionaMedicoSade>:
+
+4. <adicionaPacienteSade>:
+
+5. <adicionaLesaoSade>:
+
+6. <adicionaConsultaSade>:
+
+7. <buscaSecretarioPorCPF>:
+
+8. <buscaMedicoPorCPF>:
+
+9. <buscaPacientePorCPF>:
+
+10. <buscaPacientePorNome>:
+
+11. <desalocaDadosSade>:
+
+12. <printDadosSade>:
+
+13. <obtemPathBD>:
+
+14. <salvarColecaoBD>:
+
+15. <carregarColecaoBD>:
+
+16. <autenticaLogin>:
+
+17. <executaCadastroSecretario>:
+
+18. <executaCadastroMedico>:
+
+19. <executaCadastroPaciente>:
+
+20. <executaConsultaMedica>:
+
+21. <executaFilaImpressao>:
+
+22. <executaBuscaPaciente>:
+
+23. <executaRelatorioGeral>:
+
+24. <InicializaSade>:
+
+25. <criaBiopsia>:
+
+26. <desalocaBiopsia>:
+
+27. <imprimeNaTelaBiopsia>:
+
+28. <imprimeEmArquivoBiopsia>:
+
+29. <criaConsulta>:
+
+30. <printConsulta>:
+
+31. <escreveBinConsulta>:
+
+32. <lerBinConsulta>:
+
+33. <adicionarLesaoConsulta>:
+
+34. <obtemIdConsulta>:
+
+35. <defineIdConsulta>:
+
+36. <obtemQtdAtualLesaoConsulta>:
+
+37. <obtemIdLesoesConsulta>:
+
+38. <obtemDataConsulta>:
+
+39. <desalocaConsulta>:
+
+40. <criaData>:
+
+41. <lerData>:
+
+42. <printData>:
+
+43. <escreveBinData>:
+
+44. <lerBinData>:
+
+45. <obtemStringData>:
+
+46. <comparaData>:
+
+47. <calculaIdadeData>:
+
+48. <desalocaData>:
+
+49. <TelaLerBancoDados>:
+
+50. <TelaCadastrarSecretario>:
+
+51. <TelaCadastrarMedico>:
+
+52. <TelaCadastrarPaciente>:
+
+53. <TelaInicialConsultaMedica>:
+
+54. <TelaSegundaParteConsultaMedica>:
+
+55. <TelaSubMenuConsultaMedica>:
+
+56. <TelaCadastrarLesao>:
+
+57. <TelaGerarReceitaMedica>:
+
+58. <TelaGerarSolicitacaoBiopsia>:
+
+59. <TelaGerarEncaminhamento>:
+
+60. <TelaFilaImpressao>:
+
+61. <TelaFilaImpressaoFinal>:
+
+62. <TelaBuscarPacientes>:
+
+63. <TelaBuscarPacientesSubMenus>:
+
+64. <TelaRelatorio>:
+
+65. <TelaRelatorioSubMenu>:
+
+66. <TelaFinalizaComTecla>:
+
+67. <TelaLogin>:
+
+68. <TelaMenuPrincipal>:
+
+69. <criaEncaminhamento>:
+
+70. <desalocaEncaminhamento>:
+
+71. <imprimeNaTelaEncaminhamento>:
+
+72. <imprimeEmArquivoEncaminhamento>:
+
+73. <criaLesao>:
+
+74. <lerLesao>:
+
+75. <printLesao>:
+
+76. <escreveBinLesao>:
+
+77. <lerBinLesao>:
+
+78. <obtemRotuloLesao>:
+
+79. <defineRotuloLesao>:
+
+80. <obtemIdLesao>:
+
+81. <defineIdLesao>:
+
+82. <obtemDiagnosticoLesao>:
+
+83. <obtemRegiaoLesao>:
+
+84. <obtemTamanhoLesao>:
+
+85. <obtemCirurgiaLesao>:
+
+86. <obtemCrioterapiaLesao>:
+
+87. <desalocaLesao>:
+
+88. <criaListaBusca>:
+
+89. <adicionaResultadoBusca>:
+
+90. <desalocaListaBuscaGenerico>:
+
+91. <desalocaListaBusca>:
+
+92. <imprimeNaTelaListaBusca>:
+
+93. <imprimeEmArquivoListaBusca>:
+
+94. <criaMedico>:
+
+95. <lerMedico>:
+
+96. <printMedico>:
+
+97. <escreveBinMedico>:
+
+98. <lerBinMedico>:
+
+99. <comparaLoginSenhaMedico>:
+
+100. <comparaCPFMedico>:
+
+101. <obtemCPFMedico>:
+
+102. <obtemIdMedico>:
+
+103. <obtemNomeMedico>:
+
+104. <obtemCRMMedico>:
+
+105. <defineIdMedico>:
+
+106. <desalocaMedico>:
+
+107. <criaPaciente>:
+
+108. <lerPaciente>:
+
+109. <adicionarConsultaPaciente>:
+
+110. <lerDadosComplementaresPaciente>:
+
+111. <printPaciente>:
+
+112. <escreveBinPaciente>:
+
+113. <lerBinPaciente>:
+
+114. <comparaCPFPaciente>:
+
+115. <obtemCPFPaciente>:
+
+116. <obtemPessoaPaciente>:
+
+117. <obtemIdPaciente>:
+
+118. <defineIdPaciente>:
+
+119. <obtemNomePaciente>:
+
+120. <obtemIdConsultasPaciente>:
+
+121. <obtemQtdConsultasPaciente>:
+
+122. <calculaIdadePaciente>:
+
+123. <comparaGeneroPaciente>:
+
+124. <desalocaPaciente>:
+
+125. <criaPessoa>:
+
+126. <lerPessoa>:
+
+127. <printPessoa>:
+
+128. <printNomeDataNascPessoa>:
+
+129. <escreveBinPessoa>:
+
+130. <lerBinPessoa>:
+
+131. <comparaCPFPessoa>:
+
+132. <obtemCPFPessoa>:
+
+133. <obtemNomePessoa>:
+
+134. <calculaIdadePessoa>:
+
+135. <comparaGeneroPessoa>:
+
+136. <desalocaPessoa>:
+
+137. <criaRelatorio>:
+
+138. <desalocaRelatorioGenerico>:
+
+139. <desalocaRelatorio>:
+
+140. <imprimeNaTelaRelatorio>:
+
+141. <imprimeEmArquivoRelatorio>:
+
+142. <criaSecretario>:
+
+143. <lerSecretario>:
+
+144. <printSecretario>:
+
+145. <escreveBinSecretario>:
+
+146. <lerBinSecretario>
