@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "tPessoa.h"
+#include "tMedico.h"
 #include "tLogin.h"
-#include "tMedico.h" 
 
 struct tMedico{
     tPessoa* dadosDoMedico;
@@ -20,18 +20,18 @@ tMedico* criaMedico()
 
 void lerMedico(tMedico* m)
 {
-    LePessoa(m);
-    scanf("%12s", medico -> crm);
+    lerPessoa(m);
+    scanf("%12s", m -> CRM);
 }
 
-void printMedico(tMedico* m, int qtdMedico)
+void escreveBinMedico(tMedico* m, const char* caminho)
+{
+
+}
+
+void lerBinMedico(tMedico* m, const char* caminho)
 {
     
-}
-
-void escreveBinMedico(tMedico* m)
-{
-
 }
 
 bool comparaCPFMedico(tMedico* m, const char* cpf)
@@ -44,7 +44,7 @@ char* obtemCPFMedico(tMedico* m)
     return obtemCPFPessoa(m -> dadosDoMedico);
 }
 
-char* obtemIdMedico(tMedico* m)
+int obtemIdMedico(tMedico* m)
 {
     return m -> id;
 }
@@ -56,7 +56,7 @@ char* obtemNomeMedico(tMedico* m)
 
 char* obtemCRMMedico(tMedico* m)
 {
-    return m -> crm;
+    return m -> CRM;
 }
 
 void defineIdMedico(tMedico* m)
@@ -67,6 +67,5 @@ void defineIdMedico(tMedico* m)
 void desalocaMedico(tMedico* m)
 {
     desalocaPessoa(m -> dadosDoMedico);
-    desalocaLogin(m -> login);
     free(m);
 }

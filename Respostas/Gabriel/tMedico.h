@@ -16,7 +16,10 @@ void lerMedico(tMedico* m);
 void printMedico(tMedico* m, int qtdMedico);
 
 // Escreve as informações do médico em um arquivo binário
-void escreveBinMedico(tMedico* m);
+void escreveBinMedico(tMedico* m, const char* caminho);
+
+//Lê as informações do médico de um arquivo binário
+void lerBinMedico(tMedico* m, const char* caminho);
 
 // Compara o CPF do médico com uma string fornecida e retorna verdadeiro se forem iguais
 bool comparaCPFMedico(tMedico* m, const char* cpf);
@@ -25,7 +28,7 @@ bool comparaCPFMedico(tMedico* m, const char* cpf);
 char* obtemCPFMedico(tMedico* m);
 
 // Obtém o ID do médico como uma string
-char* obtemIdMedico(tMedico* m);
+int obtemIdMedico(tMedico* m);
 
 // Obtém o nome do médico como uma string
 char* obtemNomeMedico(tMedico* m);

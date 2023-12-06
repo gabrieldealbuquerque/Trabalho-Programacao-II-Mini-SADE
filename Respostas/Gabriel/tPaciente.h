@@ -1,9 +1,6 @@
 #ifndef _TPACIENTE_H_
 #define _TPACIENTE_H_
 
-#include <stdio.h>
-#include "tPessoa.h"
-
 typedef struct tPaciente tPaciente;
 
 tPaciente* criaPaciente();

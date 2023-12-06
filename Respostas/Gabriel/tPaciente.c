@@ -1,16 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <stdbool.h>
+#include "tPessoa.h"
 #include "tPaciente.h"
 
 struct tPaciente{
-
+	tPessoa* dadosDoPaciente;
+	tConsulta** consultas;
 };
 
 tPaciente* criaPaciente()
 {
-
+	tPaciente* paciente = calloc(1, sizeof(tPaciente));
+	return paciente;
 }
 
 void lerPaciente(tPaciente* p)

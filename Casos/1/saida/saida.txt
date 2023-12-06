@@ -1,5 +1,10 @@
 ################################################
 DIGITE O CAMINHO DO BANCO DE DADOS: ################################################
+<<<<<<< HEAD
+=======
+Caminho do banco de dados: Casos/1/../../
+Caminho da pasta de saida: Casos/1/saida
+>>>>>>> upstream/main
 #################### CADASTRO SECRETARIO #######################
 NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: NOME DE USUARIO: SENHA: NIVEL DE ACESSO: ######################## ACESSO MINI-SADE ######################
 DIGITE SEU LOGIN: DIGITE SUA SENHA: ###############################################################
@@ -158,7 +163,11 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+<<<<<<< HEAD
 #################### BUSCAR PACIENTES #######################
+=======
+#################### RELATORIO GERAL #######################
+>>>>>>> upstream/main
 NUMERO TOTAL DE PACIENTES ATENDIDOS: 1
 IDADE MEDIA: 43
 DISTRIBUICAO POR GENERO:
