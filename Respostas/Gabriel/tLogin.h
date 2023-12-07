@@ -14,4 +14,6 @@ void TelaLogin();
 //Autentica login vendo se o login dado existe na lista de logins do sistema
 bool autenticaLogin(tLogin* login, tSistema* sistema);
 
+void leLogin(tLogin* login)
+
 #endif

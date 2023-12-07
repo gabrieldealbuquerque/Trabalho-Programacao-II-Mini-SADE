@@ -33,3 +33,9 @@ bool autenticaLogin(tLogin* login, tSistema* sistema)
 	}
 	return FALSE;
 }
+
+void leLogin(tLogin* login)
+{
+	scanf("%s", login -> login);
+	scanf("%s", login -> senha);
+}

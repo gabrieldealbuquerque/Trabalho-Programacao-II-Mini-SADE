@@ -1,42 +1,39 @@
-#ifndef _TMEDICO_H_
-#define _TMEDICO_H_
+#ifndef _TLESAO_H_
+#define _TLESAO_H_
 
 #include <stdio.h>
 
 // Definição do tipo de dado tMedico
-typedef struct tMedico tMedico;
+typedef struct tLesao tLesao;
 
-// Cria um novo objeto tMedico e retorna um ponteiro para ele
-tMedico* criaMedico();
+tLesao* criaLesao()
 
-// Lê informações do médico a partir do usuário e atualiza o objeto tMedico
-void lerMedico(tMedico* m);
+void lerLesao()
 
-// Imprime as informações do médico, dado um ponteiro para o objeto tMedico e a quantidade de médicos
-void printMedico(tMedico* m, int qtdMedico);
+void printLesao()
 
-// Escreve as informações do médico em um arquivo binário
-void escreveBinMedico(tMedico* m);
+void escreveBinLesao()
 
-// Compara o CPF do médico com uma string fornecida e retorna verdadeiro se forem iguais
-bool comparaCPFMedico(tMedico* m, const char* cpf);
+void lerBinLesao()
 
-// Obtém o CPF do médico como uma string
-char* obtemCPFMedico(tMedico* m);
+char* obtemRotuloLesao()
 
-// Obtém o ID do médico como uma string
-char* obtemIdMedico(tMedico* m);
+void defineRotuloLesao()
 
-// Obtém o nome do médico como uma string
-char* obtemNomeMedico(tMedico* m);
+int obtemIdLesao()
 
-// Obtém o CRM do médico como uma string
-char* obtemCRMMedico(tMedico* m);
+void defineIdLesao()
 
-// Define o ID do médico com base em algum critério interno
-void defineIdMedico(tMedico* m);
+char* obtemDiagnosticoLesao()
 
-// Libera a memória alocada para o objeto tMedico
-void desalocaMedico(tMedico* m);
+char* obtemRegiaoLesao()
+
+int obtemTamanhoLesao()
+
+char* obtemCirurgiaLesao()
+
+char* obtemCrioterapiaLesao()
+
+void desalocaLesao()
 
 #endif

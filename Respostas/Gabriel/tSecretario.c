@@ -8,7 +8,7 @@
 struct tSecretario{
 	tPessoa* dadosSecretario;
 	tLogin* login;
-	NivelPermissao nivel;
+	char nivel[15];
 };
 
 tSecretario* criaSecretario()
@@ -17,14 +17,16 @@ tSecretario* criaSecretario()
 	return secretario;
 }
 
-void lerSecretario()
+void lerSecretario(tSecretario* s)
 {
-
+	lerPessoa(s -> dadosSecretario);
+	leLogin(s -> login);
+	scanf("%s", s -> nivel);
 }
 
-void printSecretario()
+void printSecretario(tSecretario* s)
 {
-
+	
 }
 
 void escreveBinSecretario()

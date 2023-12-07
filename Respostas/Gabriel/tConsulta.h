@@ -1,7 +1,7 @@
 #ifndef _TCONSULTA_H_
 #define _TCONSULTA_H_
 
-typedef struct tCadastro tCadastro;
+typedef struct tConsulta tConsulta;
 
 /**
  * Funções de callback que serão utilizadas para imprimir o documento na tela,
