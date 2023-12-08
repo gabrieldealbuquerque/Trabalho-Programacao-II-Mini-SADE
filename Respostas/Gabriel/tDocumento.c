@@ -28,8 +28,9 @@ tDocumento *criaDocumento(void *dado, func_ptr_imprimeNaTela imprimeNaTela,
     return novoDocumento;
 }
 
-void desalocaDocumento(tDocumento *doc)
+void desalocaDocumento(void *d)
 {
+    tDocumento* doc = (tDocumento*) d;
     if (doc != NULL)
     {
         if (doc->desaloca != NULL)
@@ -46,8 +47,9 @@ void desalocaDocumento(tDocumento *doc)
     }
 }
 
-void imprimeNaTelaDocumento(tDocumento *doc)
+void imprimeNaTelaDocumento(void *d)
 {
+    tDocumento* doc = (tDocumento*) d;
     if (doc != NULL && doc->imprimeNaTela != NULL)
     {
         doc->imprimeNaTela(doc->dado);
@@ -59,8 +61,9 @@ void imprimeNaTelaDocumento(tDocumento *doc)
     }
 }
 
-void imprimeEmArquivoDocumento(tDocumento *doc, char *path)
+void imprimeEmArquivoDocumento(void *d, char *path)
 {
+    tDocumento* doc = (tDocumento*) d;
     if (doc != NULL && doc->imprimeEmArquivo != NULL)
     {
         doc->imprimeEmArquivo(doc->dado, path);

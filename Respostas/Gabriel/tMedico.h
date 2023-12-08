@@ -2,6 +2,7 @@
 #define _TMEDICO_H_
 
 #include <stdio.h>
+#include <stdbool.h>
 
 // Definição do tipo de dado tMedico
 typedef struct tMedico tMedico;
@@ -39,7 +40,12 @@ char* obtemCRMMedico(tMedico* m);
 // Define o ID do médico com base em algum critério interno
 void defineIdMedico(tMedico* m);
 
+char* retornaLoginMedico(void* me);
+
+char* retornaSenhaMedico(void* me);
+
+void adicionaMedicoSade(void** m, void* adicionar, int qtdSecretarios);
 // Libera a memória alocada para o objeto tMedico
-void desalocaMedico(tMedico* m);
+void desalocaMedico(void* medico);
 
 #endif

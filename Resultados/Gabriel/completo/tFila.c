@@ -19,8 +19,9 @@ tFila *criaFila()
     return fila;
 }
 
-void desalocaFila(tFila *f)
+void desalocaFila(void* fi)
 {
+    tFila* f = (tFila*) fi;
     for (int i = 0; i < f -> tamanho; i++)
     {
         desalocaDocumento(f -> documento[i]);
@@ -29,10 +30,11 @@ void desalocaFila(tFila *f)
     free(f);
 }
 
-void insereDocumentoFila(tFila *f, void *dado, func_ptr_imprimeNaTela imprimeNaTela,
+void insereDocumentoFila(void *fi, void *dado, func_ptr_imprimeNaTela imprimeNaTela,
                          func_ptr_imprimeEmArquivo imprimeEmArquivo,
                          func_ptr_desaloca desaloca)
 {
+    tFila* f = (tFila*) fi;
     f->tamanho++;
 
     tDocumento** temp = (tDocumento**)realloc(f->documento, f->tamanho * sizeof(tDocumento*));
@@ -48,13 +50,15 @@ void insereDocumentoFila(tFila *f, void *dado, func_ptr_imprimeNaTela imprimeNaT
     f->documento[f->tamanho - 1] = criaDocumento(dado, imprimeNaTela, imprimeEmArquivo, desaloca);
 }
 
-int quantidadeDocumentosNaFila(tFila *f)
+int quantidadeDocumentosNaFila(void *fi)
 {
+    tFila* f = (tFila*) fi;
     return f -> tamanho;
 }
 
-void imprimeFila(tFila *f, char *path)
+void imprimeFila(void *fi, char *path)
 {
+    tFila* f = (tFila*) fi;
     for (int i = 0; i < f -> tamanho; i++)
     {
         imprimeNaTelaDocumento(f -> documento[i]);

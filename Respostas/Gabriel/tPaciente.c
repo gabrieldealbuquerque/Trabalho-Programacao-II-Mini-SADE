@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
-#include "tPessoa.h"
 #include "tPaciente.h"
 
 struct tPaciente{
@@ -15,6 +13,7 @@ struct tPaciente{
 tPaciente* criaPaciente()
 {
 	tPaciente* paciente = calloc(1, sizeof(tPaciente));
+	paciente -> dadosDoPaciente = criaPessoa();
 	return paciente;
 }
 
@@ -26,8 +25,8 @@ void lerPaciente(tPaciente* p)
 void adicionarConsultaPaciente(tPaciente* p, tConsulta* consulta)
 {
 	p -> qtdConsultas++;
-	p -> consultas = (tConsulta**) realloc (p -> consultas, sizeof(tConsulta*) * p -> qtdConsultas)
-	p -> consulta[p -> qtdConsultas - 1] = consulta;
+	p -> consultas = (tConsulta**) realloc (p -> consultas, sizeof(tConsulta*) * p -> qtdConsultas);
+	p -> consultas[p -> qtdConsultas - 1] = consulta;
 }
 
 /*void lerDadosComplementaresPaciente(tPaciente* p)
@@ -100,9 +99,22 @@ bool comparaGeneroPaciente(tPaciente* p, const char* genero)
 	return comparaCPFPessoa(p, genero);
 }
 
-void desalocaPaciente(tPaciente* p)
+void adicionaPacienteSade(void** p, void* adicionar, int qtdPacientes)
 {
+    tPaciente** pacientes = (tPaciente**) p;
+    tPaciente* pacienteAdd = (tPaciente*) adicionar;
+    pacientes = (tPaciente**) realloc(pacientes, sizeof(tPaciente*) * (qtdPacientes));
+    pacientes[qtdPacientes - 1] = pacienteAdd;
+}
+
+void desalocaPaciente(void* pa)
+{
+	tPaciente* p = (tPaciente*) pa;
 	desalocaPessoa(p -> dadosDoPaciente);
-	desalocaConsultas(p -> consultas, p -> qtdConsultas);
+	for (int i = 0; i < p -> qtdConsultas; i++)
+	{
+		desalocaConsulta(p -> consultas[i]);
+	}
+	free(p -> consultas);
 	free(p);
 }

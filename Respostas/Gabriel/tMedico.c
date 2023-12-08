@@ -15,6 +15,8 @@ struct tMedico{
 tMedico* criaMedico()
 {
     tMedico* medico = (tMedico*) calloc (1, sizeof(tMedico));
+    medico -> dadosDoMedico = criaPessoa();
+    medico -> login = criaLogin();
     return medico;
 }
 
@@ -64,8 +66,29 @@ void defineIdMedico(tMedico* m)
     scanf("%d", &m -> id);
 }
 
-void desalocaMedico(tMedico* m)
+char* retornaLoginMedico(void* me)
 {
+	tMedico* medico = (tMedico*) me;
+	return obterLogin(medico -> login);
+}
+
+char* retornaSenhaMedico(void* me)
+{
+	tMedico* medico = (tMedico*) me;
+	return obterSenha(medico -> login);
+}
+
+void adicionaMedicoSade(void** m, void* adicionar, int qtdMedicos)
+{
+    tMedico** medicos = (tMedico**) m;
+    tMedico* medicoAdd = (tMedico*) adicionar;
+    medicos = (tMedico**) realloc (medicos, sizeof(tMedico*) * (qtdMedicos));
+    medicos[qtdMedicos-1] = medicoAdd;
+}
+
+void desalocaMedico(void* medico)
+{
+    tMedico* m = (tMedico*) medico;
     desalocaPessoa(m -> dadosDoMedico);
     free(m);
 }

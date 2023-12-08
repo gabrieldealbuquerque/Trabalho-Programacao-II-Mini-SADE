@@ -20,10 +20,15 @@ tPessoa* criaPessoa()
 
 void lerPessoa(tPessoa* p)
 {
+    printf("Digite o nome:\n");
     scanf("%s", p -> nome);
+    printf("Digite o cpf:\n");
     scanf("%s", p -> cpf);
+    printf("Digite a data de nascimento:\n");
     scanf("%s", p -> dataNascimento);
+    printf("Digite o telefone:\n");
     scanf("%s", p -> telefone);
+    printf("Digite o genero:\n");
     scanf("%s", p -> genero);
 }
 

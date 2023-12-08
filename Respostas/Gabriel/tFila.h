@@ -15,7 +15,7 @@ tFila *criaFila();
  * associada a ela. Essa função também desaloca todos os documentos associados a fila.
  * Essa função sempre verifica se o ponteiro é NULL antes de desalocar.
  */
-void desalocaFila(tFila *f);
+void desalocaFila(void *fi);
 
 /**
  * Função que recebe uma fila, um dado genérico e suas funções de callback para criar um Documento com esses elementos
@@ -23,20 +23,20 @@ void desalocaFila(tFila *f);
  * múltiplos Documentos (limitados pela memória) aguardando para serem impressos.
  *
  */
-void insereDocumentoFila(tFila *f, void *dado, func_ptr_imprimeNaTela imprimeNaTela,
+void insereDocumentoFila(void *fi, void *dado, func_ptr_imprimeNaTela imprimeNaTela,
                          func_ptr_imprimeEmArquivo ImprimeEmArquivo,
                          func_ptr_desaloca desaloca);
 
 /**
  * Função que recebe uma fila e retorna quantos documentos existem dentro dela.
  */
-int quantidadeDocumentosNaFila(tFila *f);
+int quantidadeDocumentosNaFila(void *fi);
 
 /**
  * Função que invoca as funções de impressão de Documento executando a impressão de todos os documentos da fila.
  * A impressão é feita em duas etapas, primeiro o Documento é impresso na tela e depois em arquivo. 
  * A função também recebe o path para o diretório onde o arquivo deve ser criado ou editado 
  */
-void imprimeFila(tFila *f, char *path);
+void imprimeFila(void *fi, char *path);
 
 #endif

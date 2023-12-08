@@ -1,7 +1,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "tLesao.c"
+#include "tLesao.h"
+#include <string.h>
 
 struct tLesao{
     char rotulo[3];
@@ -9,8 +10,8 @@ struct tLesao{
     char diagnostico[50];
     char regiao[20];
     int tamanho;
-    bool cirurgia;
-    bool crioterapia; 
+    int cirurgia;
+    int crioterapia; 
 };
 
 tLesao* criaLesao()
@@ -21,7 +22,11 @@ tLesao* criaLesao()
 
 void lerLesao(tLesao* l)
 {
-
+    scanf("%s", l -> diagnostico);
+    scanf("%s", l -> regiao);
+    scanf("%d", &l -> tamanho);
+    scanf("%d", &l -> cirurgia);
+    scanf("%d", &l -> crioterapia);
 }
 
 void printLesao(tLesao* l)

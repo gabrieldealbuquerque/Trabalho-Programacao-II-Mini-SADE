@@ -3,37 +3,26 @@
 
 typedef struct tConsulta tConsulta;
 
-/**
- * Funções de callback que serão utilizadas para imprimir o documento na tela,
- * em arquivo e desalocar o dado genérico, respectivamente.
- */
-typedef void (*func_ptr_imprimeNaTela)(void *dado);
-typedef void (*func_ptr_imprimeEmArquivo)(void *dado, char *path);
-typedef void (*func_ptr_desaloca)(void *dado);
+tConsulta* criaConsulta();
 
-/**
- * Função que recebe um dado genérico (representando um tipo de documento) e suas funções de callback.
- * A função cria um Documento e retorna um ponteiro para ele.
- */
-tDocumento *criaDocumento(void *dado, func_ptr_imprimeNaTela imprimeNaTela,
-                          func_ptr_imprimeEmArquivo ImprimeEmArquivo,
-                          func_ptr_desaloca desaloca);
+void printConsulta(tConsulta* c);
 
-/**
- * Função que recebe um Documento e o desaloca. O dado genérico também deve ser desalocado
- * dentro dessa função.
- */
-void desalocaDocumento(tDocumento *doc);
+void escreveBinConsulta(tConsulta* c);
 
-/**
- * Função que recebe um Documento genérico e o imprime na tela.
- */
-void imprimeNaTelaDocumento(tDocumento *doc);
+void lerBinConsulta(tConsulta* c);
 
-/**
- * Função que recebe um Documento genérico e o imprime em um arquivo.
- * O path representa o caminho até o diretório onde o arquivo será criado ou editado.
- */
-void imprimeEmArquivoDocumento(tDocumento *doc, char *path);
+void adicionarLesaoConsulta(tConsulta* c);
+
+int obtemIdConsulta(tConsulta* c);
+
+void defineIdConsulta(tConsulta* c, int id);
+
+int obtemQtdAtualLesaoConsulta(tConsulta* c);
+
+//int obtemIdLesoesConsulta(tConsulta* c);
+
+char* obtemDataConsulta(tConsulta* c);
+
+void desalocaConsulta(tConsulta* c);
 
 #endif

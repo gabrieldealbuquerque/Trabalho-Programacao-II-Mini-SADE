@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "tpessoa.h": "c",
+        "tmedico.h": "c",
+        "tsecretario.h": "c",
+        "tlogin.h": "c"
+    }
+}
