@@ -23,9 +23,11 @@ void lerBinPaciente(tPaciente* p);
 
 bool comparaCPFPaciente(tPaciente* p, const char* cpf);
 
-char* obtemCPFPaciente(tPaciente* p);
+char* obtemCPFPaciente(void* pa);
 
 tPessoa* obtemPessoaPaciente(tPaciente* p);
+
+char* obtemDataPaciente(tPaciente* p);
 
 int obtemIdPaciente(tPaciente* p);
 
@@ -46,6 +48,8 @@ char* retornaLoginPaciente(void* pac);
 char* retornaSenhaPaciente(void* pac);
 
 void adicionaPacienteSade(void** p, void* adicionar, int qtdPacientes);
+
+tConsulta* retornaConsultaPaciente(void *p);
 
 void desalocaPaciente(void* p);
 

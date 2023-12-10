@@ -3,29 +3,36 @@
 
 typedef struct tLogin tLogin;
 
-typedef enum{
-    USER,
-    ADMIN
-} NivelPermissao;
-
-#include <stdbool.h>
-
 //Imprime a tela até receber um login válido
 void TelaLogin();
 
 tLogin* criaLogin();
 //Autentica login vendo se o login dado existe na lista de logins do sistema
-bool autenticaLogin(tLogin* login, void* sis);
+int autenticaLogin(const char* login, const char* senha, void* sis);
 
 void leLogin(tLogin* login);
+
+tLogin* leLoginAcesso();
+
+void AtribuiTipoAcesso(tLogin* login, int EhSecretario);
+
+int retornaTipodeAcesso(tLogin* login);
+
+void adicionaIdLogin(tLogin* login, int id);
 
 char* obterLogin(tLogin* login);
 
 char* obterSenha(tLogin* login);
 
+char* obterAcesso(tLogin* login);
+
 void atualizaLogin(tLogin* login, const char* novoLogin);
 
 void atualizaSenha(tLogin* login, const char* novaSenha);
+
+void atualizaAcesso(tLogin* login, const char* acesso);
+
+int retornaIdLogin(tLogin* login);
 
 void desalocaLogin(void* login);
 

@@ -21,15 +21,19 @@ tPessoa* criaPessoa()
 void lerPessoa(tPessoa* p)
 {
     printf("Digite o nome:\n");
-    scanf("%s", p -> nome);
+    scanf(" %[^\n]", p->nome); // O espaço antes do %[^\n] consome possíveis caracteres de nova linha deixados no buffer
+    
     printf("Digite o cpf:\n");
-    scanf("%s", p -> cpf);
+    scanf("%s", p->cpf);
+
     printf("Digite a data de nascimento:\n");
-    scanf("%s", p -> dataNascimento);
+    scanf("%s", p->dataNascimento);
+
     printf("Digite o telefone:\n");
-    scanf("%s", p -> telefone);
+    scanf("%s", p->telefone);
+
     printf("Digite o genero:\n");
-    scanf("%s", p -> genero);
+    scanf("%s", p->genero);
 }
 
 void printPessoa(tPessoa* p)
@@ -65,6 +69,11 @@ char* obtemCPFPessoa(tPessoa* p)
 char* obtemNomePessoa(tPessoa* p)
 {
 	return p -> nome;
+}
+
+char* obtemDataPessoa(tPessoa* p)
+{
+	return p -> dataNascimento;
 }
 
 int calculaIdadePessoa(tPessoa* p)

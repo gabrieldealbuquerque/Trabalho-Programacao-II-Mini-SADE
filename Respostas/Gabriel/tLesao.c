@@ -22,11 +22,16 @@ tLesao* criaLesao()
 
 void lerLesao(tLesao* l)
 {
-    scanf("%s", l -> diagnostico);
-    scanf("%s", l -> regiao);
-    scanf("%d", &l -> tamanho);
-    scanf("%d", &l -> cirurgia);
-    scanf("%d", &l -> crioterapia);
+    printf("DIAGNOSTICO CLINICO:\n");
+    scanf("%49s", l->diagnostico);  // Use %49s instead of %s
+    printf("REGIAO DO CORPO:\n");
+    scanf("%19s", l->regiao);  // Use %19s instead of %s
+    printf("TAMANHO:\n");
+    scanf("%d", &l->tamanho);
+    printf("ENVIAR PARA CIRURGIA:\n");
+    scanf("%d", &l->cirurgia);
+    printf("ENVIAR PARA CRIOTERAPIA:\n");
+    scanf("%d", &l->crioterapia);
 }
 
 void printLesao(tLesao* l)

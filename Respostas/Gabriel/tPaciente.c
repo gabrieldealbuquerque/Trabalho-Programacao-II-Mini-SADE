@@ -7,7 +7,7 @@ struct tPaciente{
 	tPessoa* dadosDoPaciente;
 	tConsulta** consultas;
 	int qtdConsultas;
-	//int id;
+	int id;
 };
 
 tPaciente* criaPaciente()
@@ -34,6 +34,12 @@ void adicionarConsultaPaciente(tPaciente* p, tConsulta* consulta)
 
 }*/
 
+tConsulta* retornaConsultaPaciente(void *p)
+{
+	tPaciente* paciente = (tPaciente*) p;
+	return paciente -> consultas[paciente -> qtdConsultas-1];
+}
+
 void printPaciente(tPaciente* p)
 {
 
@@ -54,8 +60,9 @@ bool comparaCPFPaciente(tPaciente* p, const char* cpf)
 	return (comparaCPFPessoa(p -> dadosDoPaciente, cpf));
 }
 
-char* obtemCPFPaciente(tPaciente* p)
+char* obtemCPFPaciente(void* pa)
 {
+	tPaciente* p = (tPaciente*) pa;
 	return obtemCPFPessoa(p -> dadosDoPaciente);
 }
 
@@ -79,6 +86,11 @@ char* obtemNomePaciente(tPaciente* p)
 	return (obtemNomePessoa(p -> dadosDoPaciente));
 }
 
+char* obtemDataPaciente(tPaciente* p)
+{
+	return (obtemDataPessoa(p -> dadosDoPaciente));
+}
+
 /*int obtemIdConsultasPaciente(tPaciente* p)
 {
 	
@@ -94,10 +106,10 @@ int calculaIdadePaciente(tPaciente* p)
 	return calculaIdadePessoa(p -> dadosDoPaciente);
 }
 
-bool comparaGeneroPaciente(tPaciente* p, const char* genero)
+/*bool comparaGeneroPaciente(tPaciente* p, const char* genero)
 {
-	return comparaCPFPessoa(p, genero);
-}
+	return comparaGeneroPaciente(p -> dadosDoPaciente, genero);
+}*/
 
 void adicionaPacienteSade(void** p, void* adicionar, int qtdPacientes)
 {

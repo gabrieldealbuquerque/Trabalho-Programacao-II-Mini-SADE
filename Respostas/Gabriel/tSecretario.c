@@ -8,7 +8,8 @@
 struct tSecretario{
 	tPessoa* dadosSecretario;
 	tLogin* login;
-	char nivel[15];
+	int idLogin;
+	int id;
 };
 
 tSecretario* criaSecretario()
@@ -24,8 +25,19 @@ void lerSecretario(tSecretario* s)
 	printf("AAAA");
 	lerPessoa(s -> dadosSecretario);
 	leLogin(s -> login);
-	printf("Nivel de poder:\n");
-	scanf("%s", s -> nivel);
+	printf("NIVEL DE ACESSO:\n");
+	AtribuiTipoAcesso(s -> login, 1);
+}
+
+void defineIdSecretario(tSecretario* s, int id)
+{
+	s -> id = id;
+}
+
+void defineIdLoginSecretario(tSecretario* s, int id)
+{
+	s -> idLogin = id;
+	adicionaIdLogin(s -> login, id);
 }
 
 void printSecretario(tSecretario* s)
@@ -53,6 +65,18 @@ char* retornaSenhaSecretario(void* secre)
 {
 	tSecretario* secretario = (tSecretario*) secre;
 	return obterSenha(secretario -> login);
+}
+
+char* retornaAcessoSecretario(void *secre)
+{
+	tSecretario* secretario = (tSecretario*) secre;
+	return obterAcesso(secretario -> login);
+}
+
+char* obtemCPFSecretario(void* secre)
+{
+	tSecretario* secretario = (tSecretario*) secre;
+	return obtemCPFPessoa(secretario -> dadosSecretario);	
 }
 
 void adicionaSecretarioSade(void** s, void* adicionar, int qtdSecretarios)

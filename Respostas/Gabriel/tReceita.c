@@ -29,7 +29,7 @@ tReceita *criaReceita(char *nomePaciente, eTipoUso tipoUso, char *nomeMedicament
         exit(1);
     }
 
-    // Use strdup to duplicate the strings
+    // Use strdup to duplicate the strings  
     strcpy(novaReceita->nomePaciente, nomePaciente);
     novaReceita->tipoUso = tipoUso;
     strcpy(novaReceita->nomeMedicamento, nomeMedicamento);

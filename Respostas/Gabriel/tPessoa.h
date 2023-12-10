@@ -6,29 +6,17 @@
 typedef struct tPessoa tPessoa;
 
 tPessoa* criaPessoa();
-
-void lerPessoa();
-
-void printPessoa();
-
+void lerPessoa(tPessoa* p);
+void printPessoa(tPessoa* p);
 void printNomeDataNascPessoa();
-
 void escreveBinPessoa();
-
 void lerBinPessoa();
-
-bool comparaCPFPessoa();
-
-char* obtemCPFPessoa();
-
-char* obtemNomePessoa();
-
-int calculaIdadePessoa();
-
-bool comparaGeneroPessoa();
-
-bool autenticaLogin();
-
-void desalocaPessoa();
+bool comparaCPFPessoa(tPessoa* p, const char* cpf);
+char* obtemCPFPessoa(tPessoa* p);
+char* obtemNomePessoa(tPessoa* p);
+char* obtemDataPessoa(tPessoa* p);
+int calculaIdadePessoa(tPessoa* p);
+bool comparaGeneroPessoa(tPessoa* p, const char* genero);
+void desalocaPessoa(tPessoa* p);
 
 #endif

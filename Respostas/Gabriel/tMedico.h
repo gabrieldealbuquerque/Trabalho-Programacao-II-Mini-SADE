@@ -10,6 +10,8 @@ typedef struct tMedico tMedico;
 // Cria um novo objeto tMedico e retorna um ponteiro para ele
 tMedico* criaMedico();
 
+tMedico* criaMedicoVazio();
+
 // Lê informações do médico a partir do usuário e atualiza o objeto tMedico
 void lerMedico(tMedico* m);
 
@@ -28,8 +30,12 @@ bool comparaCPFMedico(tMedico* m, const char* cpf);
 // Obtém o CPF do médico como uma string
 char* obtemCPFMedico(tMedico* m);
 
+int mesmoIdLoginMedico(tMedico* m, int id);
+
 // Obtém o ID do médico como uma string
-int obtemIdMedico(tMedico* m);
+void defineIdMedico(tMedico* m, int id);
+
+void defineIdLoginMedico(tMedico* m, int id);
 
 // Obtém o nome do médico como uma string
 char* obtemNomeMedico(tMedico* m);
@@ -37,12 +43,11 @@ char* obtemNomeMedico(tMedico* m);
 // Obtém o CRM do médico como uma string
 char* obtemCRMMedico(tMedico* m);
 
-// Define o ID do médico com base em algum critério interno
-void defineIdMedico(tMedico* m);
-
 char* retornaLoginMedico(void* me);
 
 char* retornaSenhaMedico(void* me);
+
+char* retornaAcessoMedico(void *me);
 
 void adicionaMedicoSade(void** m, void* adicionar, int qtdSecretarios);
 // Libera a memória alocada para o objeto tMedico

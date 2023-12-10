@@ -4,6 +4,7 @@
 #include "tMedico.h"
 #include "tSecretario.h"
 #include "tPaciente.h"
+#include "tDocumento.h"
 #include <stdbool.h>
 #include "tLogin.h"
 
@@ -17,13 +18,13 @@ void InicializaSade(tSistema* sistema);
 
 //void adicionaConsultaSade();
 
-bool buscaSecretarioPorCPF(const char* cpf, tSistema* sistema);
+int buscaSecretarioPorCPF(const char* cpf, tSistema* sistema);
 
-bool buscaMedicoPorCPF(const char* cpf, tSistema* sistema);
+int buscaMedicoPorCPF(const char* cpf, tSistema* sistema);
 
-bool buscaPacientePorCPF(const char* cpf, tSistema* sistema);
+int buscaPacientePorCPF(const char* cpf, tSistema* sistema);
 
-bool buscaPacientePorNome(const char* nome, tSistema* sistema);
+int buscaPacientePorNome(const char* nome, tSistema* sistema);
 
 //void printDadosSade();
 
@@ -39,9 +40,9 @@ void executaCadastroMedico(tSistema* sistema);
 
 void executaCadastroPaciente(tSistema* sistema);
 
-void executaConsultaMedica(tSistema* sistema);
+void executaConsultaMedica(tSistema* sistema, int idMedico);
 
-void executaFilaImpressao(tSistema* sistema);
+void executaFilaImpressao(tSistema* sistema, void* documento);
 
 void executaBuscaPaciente(tSistema* sistema);
 
@@ -55,14 +56,16 @@ char* obterNomeLogin(tSistema* sistema, int i);
 
 char* obterSenhaLogin(tSistema* sistema, int i);
 
-void ImprimeMenuPrincipal();
+void ImprimeMenuPrincipal(int);
 
-void TrataOpcao(int opcao, tSistema* sistema);
+void TrataOpcao(int opcao, tSistema* sistema, int);
 
-void atualizaListaDeLoginsGenerico(void* pessoa, tSistema* sistema, char* (*retornaLogin)(void*), char* (*retornaSenha)(void*));
+void TrataOpcaoConsulta(int opcao, int idPaciente, int idMedico, tSistema* sistema);
 
-void atualizaListaAdequadaGenericamente(void** lista, void* adicionar, int i);
+void atualizaListaDeLoginsGenerico(void* pessoa, tSistema* sistema, char* (*retornaLogin)(void*), char* (*retornaSenha)(void*), char* (*retornaAcesso)(void*));
 
-void atualizaListaqualquer(void** lista, void* adicionar, int qtd, void (*funcaoAdicionar)(void**, void*, int));
+void atualizaListadeHumanos(void** lista, void* adicionar, int qtd, void (*funcaoAdicionar)(void**, void*, int));
+
+void ImprimeMenuConsulta();
 
 #endif

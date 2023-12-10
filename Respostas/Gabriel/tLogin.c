@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "tLogin.h"
 #include "tSistema.h"
 
 struct tLogin{
 	char login[100];
 	char senha[100];
-	NivelPermissao acesso;
+	char acesso[10];
+	int id;
 };
 
 void TelaLogin()
@@ -24,20 +26,20 @@ tLogin* criaLogin()
 	return login;
 }
 
-bool autenticaLogin(tLogin* login, void* sis)
+int autenticaLogin(const char* login, const char* senha, void* sis)
 {
 	tSistema* sistema = (tSistema*) sis;
 	for (int i = 0; i < obterQtdLogins(sistema); i++)
 	{
-		if (!strcmp(obterNomeLogin(sistema, i), login -> login))
+		if (!strcmp(obterNomeLogin(sistema, i), login))
 		{
-			if (!strcmp(obterSenhaLogin(sistema, i), login -> senha))
+			if (!strcmp(obterSenhaLogin(sistema, i), senha))
 			{
-				return true;
+				return i;
 			}
 		}
 	}
-	return false;
+	return -1;
 }
 
 void leLogin(tLogin* login)
@@ -46,6 +48,61 @@ void leLogin(tLogin* login)
 	scanf("%s", login -> login);
 	printf("Digite a senha:\n");
 	scanf("%s", login -> senha);
+}
+
+tLogin* leLoginAcesso()
+{
+	tLogin* acesso = criaLogin();
+	printf("DIGITE SEU LOGIN:\n");
+    scanf("%s", acesso -> login);
+    printf("DIGITE SUA SENHA:\n");
+    scanf("%s", acesso -> senha);
+}
+
+void AtribuiTipoAcesso(tLogin* login, int EhSecretario)
+{	
+	if (EhSecretario)
+	{
+		scanf("%s", login -> acesso);
+	
+		int i = 0;
+		while (login -> acesso[i])
+		{
+			login -> acesso[i] = toupper((unsigned char) login -> acesso[i]);
+			i++;
+		}
+		printf("ACESSO:%s\n", login -> acesso);
+	}
+	else
+	{
+		strcpy(login -> acesso, "MEDICO");
+	}
+}
+
+void adicionaIdLogin(tLogin* login, int id)
+{
+	login -> id = id;
+}
+
+int retornaIdLogin(tLogin* login)
+{
+	return login -> id;
+}
+
+int retornaTipodeAcesso(tLogin* login)
+{
+	printf("ACESSO:%s\n", login -> acesso);
+	if (!(strcmp(login -> acesso, "ADMIN")))
+	{
+		printf("AAAAAAdmin\n");
+		return 1;
+	}
+	else if(!(strcmp(login -> acesso, "MEDICO")))
+	{
+		return 2;
+	}
+	printf("AAAAAAAAAA");
+	return 0;
 }
 
 char* obterLogin(tLogin* login)
@@ -58,6 +115,11 @@ char* obterSenha(tLogin* login)
 	return login -> senha;
 }
 
+char* obterAcesso(tLogin* login)
+{
+	return login -> acesso;
+}
+
 void atualizaLogin(tLogin* login, const char* novoLogin)
 {
 	strcpy(login -> login, novoLogin);
@@ -66,6 +128,11 @@ void atualizaLogin(tLogin* login, const char* novoLogin)
 void atualizaSenha(tLogin* login, const char* novaSenha)
 {
 	strcpy(login -> senha, novaSenha);
+}
+
+void atualizaAcesso(tLogin* login, const char* acesso)
+{
+	strcpy(login -> acesso, acesso);
 }
 
 void desalocaLogin(void* login)

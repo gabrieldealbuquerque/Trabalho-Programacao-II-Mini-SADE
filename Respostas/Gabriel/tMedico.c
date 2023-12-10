@@ -9,6 +9,7 @@ struct tMedico{
     tPessoa* dadosDoMedico;
     tLogin* login;
     int id;
+    int idLogin;
     char CRM[12];
 };
 
@@ -22,8 +23,18 @@ tMedico* criaMedico()
 
 void lerMedico(tMedico* m)
 {
-    lerPessoa(m);
+    lerPessoa(m -> dadosDoMedico);
+    printf("CRM:\n");
     scanf("%12s", m -> CRM);
+    leLogin(m -> login);
+    AtribuiTipoAcesso(m -> login, 0);
+}
+
+tMedico* criaMedicoVazio()
+{
+    tMedico* medico = (tMedico*) calloc (1, sizeof(tMedico));
+    medico -> dadosDoMedico = criaPessoa();
+    return medico;
 }
 
 void escreveBinMedico(tMedico* m, const char* caminho)
@@ -61,9 +72,20 @@ char* obtemCRMMedico(tMedico* m)
     return m -> CRM;
 }
 
-void defineIdMedico(tMedico* m)
+int mesmoIdLoginMedico(tMedico* m, int id)
 {
-    scanf("%d", &m -> id);
+    return m -> id == id;
+}
+
+void defineIdMedico(tMedico* m, int id)
+{
+    m -> id = id;
+}
+
+void defineIdLoginMedico(tMedico* m, int id)
+{
+    m -> idLogin = id;
+    adicionaIdLogin(m -> login, id);
 }
 
 char* retornaLoginMedico(void* me)
@@ -76,6 +98,12 @@ char* retornaSenhaMedico(void* me)
 {
 	tMedico* medico = (tMedico*) me;
 	return obterSenha(medico -> login);
+}
+
+char* retornaAcessoMedico(void *me)
+{
+	tMedico* medico = (tMedico*) me;
+	return obterAcesso(medico -> login);
 }
 
 void adicionaMedicoSade(void** m, void* adicionar, int qtdMedicos)

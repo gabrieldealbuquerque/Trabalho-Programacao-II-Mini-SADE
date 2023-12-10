@@ -88,7 +88,7 @@ ESCOLHA UMA OPCAO:
 CPF DO PACIENTE: ---
 -NOME: VAINE
 -DATA DE NASCIMENTO: 2/4/1985
----
+---	
 DATA DA CONSULTA: POSSUI DIABETES: FUMANTE: ALERGIA A MEDICAMENTO: HISTORICO DE CANCER: TIPO DE PELE: 
 ############################################################
 #################### CONSULTA MEDICA #######################

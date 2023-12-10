@@ -3,12 +3,13 @@
 
 typedef struct tBiopsia tBiopsia;
 
-tBiopsia* criaBiopsia();
+tBiopsia* criaBiopsia(const char* nome, const char* cpf, const char* rotulo, const char* diagnostico, const char* regiao,
+                        int tamanho, const char* nomeMedico, const char* CRM, const char* data);
 
-void desalocaBiopsia(tBiopsia* b);
+void desalocaBiopsia(void* bi);
 
-void imprimeNaTelaBiopsia(tBiopsia* b);
+void imprimeNaTelaBiopsia(void* bi);
 
-void imprimeEmArquivoBiopsia(tBiopsia* b);
+void imprimeEmArquivoBiopsia(void* bi, char *path);
 
 #endif
