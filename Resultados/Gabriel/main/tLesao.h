@@ -1,6 +1,7 @@
 #ifndef _TLESAO_H_
 #define _TLESAO_H_
 
+#include <stdbool.h>
 #include <stdio.h>
 
 // Definição do tipo de dado tMedico
@@ -8,32 +9,34 @@ typedef struct tLesao tLesao;
 
 tLesao* criaLesao();
 
-void lerLesao();
+void lerLesao(tLesao* l);
 
 void printLesao();
 
-void escreveBinLesao();
+void escreveBinLesao(tLesao* l, FILE* arquivo);
 
-void lerBinLesao();
+void lerBinLesao(tLesao* l, FILE* arquivo);
 
-char* obtemRotuloLesao();
+char* obtemRotuloLesao(tLesao* l);
 
-void defineRotuloLesao();
+void defineRotuloLesao(tLesao* l, const char* rotulo);
 
-int obtemIdLesao();
+tLesao* copiaLesao(tLesao* a);
 
-void defineIdLesao();
+int obtemIdLesao(tLesao* l);
 
-char* obtemDiagnosticoLesao();
+void defineIdLesao(tLesao* l, int id);
 
-char* obtemRegiaoLesao();
+char* obtemDiagnosticoLesao(tLesao* l);
 
-int obtemTamanhoLesao();
+char* obtemRegiaoLesao(tLesao* l);
 
-char* obtemCirurgiaLesao();
+int obtemTamanhoLesao(tLesao* l);
 
-char* obtemCrioterapiaLesao();
+bool obtemCirurgiaLesao(tLesao* l);
 
-void desalocaLesao();
+bool obtemCrioterapiaLesao(tLesao* l);
+
+void desalocaLesao(tLesao* l);
 
 #endif

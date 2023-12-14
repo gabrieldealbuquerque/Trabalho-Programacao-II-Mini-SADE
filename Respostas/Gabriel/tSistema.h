@@ -9,8 +9,17 @@
 #include "tLogin.h"
 
 typedef struct tSistema tSistema;
+typedef struct tLista_busca tLista_busca;
 
-void Sistema();
+tLista_busca* criaListaBusca();
+void desalocaListaBuscaGenerico(void* lista);
+void desalocaListaBusca(void* lista);
+void imprimeNaTelaListaBusca(void* lista);
+void imprimeEmArquivoListaBusca(void* lista, char* nomeArquivo);
+int obterTamanhoLista(void* l);
+
+
+void Sistema(const char* caminho);
 
 void InicializaSade(tSistema* sistema);
 
@@ -30,9 +39,13 @@ int buscaPacientePorNome(const char* nome, tSistema* sistema);
 
 char* obtemPathBD(tSistema* sistema);
 
-//void salvarColecaoBD(tSistema* sistema);
+void salvar_sistema_em_binario(tSistema* sistema, const char* caminho, const char* caminhoBin);
+
+void ler_sistema_de_binario(tSistema* sistema, const char* caminho, const char*  caminhoBin);
 
 //void carregarColecaoBD(tSistema* sistema);
+
+tLista_busca* adicionaResultadoBusca(tSistema* sistema, char* nome);
 
 void executaCadastroSecretario(tSistema* sistema);
 
@@ -42,9 +55,9 @@ void executaCadastroPaciente(tSistema* sistema);
 
 void executaConsultaMedica(tSistema* sistema, int idMedico);
 
-void executaFilaImpressao(tSistema* sistema, void* documento);
+void executaFilaImpressao(tSistema* sistema);
 
-void executaBuscaPaciente(tSistema* sistema);
+void executaBusca(tSistema* sistema);
 
 void executaRelatorioGeral(tSistema* sistema);
 
@@ -60,12 +73,20 @@ void ImprimeMenuPrincipal(int);
 
 void TrataOpcao(int opcao, tSistema* sistema, int);
 
-void TrataOpcaoConsulta(int opcao, int idPaciente, int idMedico, tSistema* sistema);
+int TrataOpcaoConsulta(int opcao, int idPaciente, int idMedico, tSistema* sistema);
 
 void atualizaListaDeLoginsGenerico(void* pessoa, tSistema* sistema, char* (*retornaLogin)(void*), char* (*retornaSenha)(void*), char* (*retornaAcesso)(void*));
 
 void atualizaListadeHumanos(void** lista, void* adicionar, int qtd, void (*funcaoAdicionar)(void**, void*, int));
 
+int obtemQtdPacientes(tSistema* sistema);
+
+tPaciente** obtemPacientes(tSistema* sistema);
+
 void ImprimeMenuConsulta();
+
+void ler_lista_de_binario(tLista_busca *lista, FILE* arquivo);
+
+void salvar_lista_em_binario(tLista_busca *lista, FILE* arquivo);
 
 #endif

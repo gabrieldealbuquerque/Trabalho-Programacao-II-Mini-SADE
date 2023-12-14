@@ -1,9 +1,31 @@
 ################################################
-DIGITE O CAMINHO DO BANCO DE DADOS: ################################################
-Caminho do banco de dados: Casos/2/../../
-Caminho da pasta de saida: Casos/2/saida
-######################## ACESSO MINI-SADE ######################
-DIGITE SEU LOGIN: DIGITE SUA SENHA: ###############################################################
+DIGITE O CAMINHO DO BANCO DE DADOS:
+################################################
+Caminho do banco de dados: Resultados/Gabriel/main/Casos/2
+Caminho da pasta de saida: ../../
+CAMINHO:Resultados/Gabriel/main/Casos/2/../../sistema.bin
+cucucucuu
+ARQUIVO PATH:Resultados/Gabriel/main/Casos/2
+NEEEOME:VAINE
+bbbbbbbbbAAAAAAAAAAAACONSULTAS:1
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+Quantidade de medicos:1
+Quantidade de secretarios:1
+Quantidade de pacientes:2
+Quantidade de logins:2
+QTD PACIETNE:2
+PACIENTE[0]:VAINEPACIENTE[1]:TRYNDAMERE######################## ACESSO MINI-SADE ######################DIGITE SEU LOGIN:
+DIGITE SUA SENHA:
+###############################################################
+LOGIN:heimer
+SENHA:science!
+NLOGIN:0ACESSO:ADMIN
+AAAAAAdmin
+Quantidade de medicos:1
+Quantidade de secretarios:1
+Quantidade de pacientes:2
+Quantidade de logins:2
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -15,10 +37,27 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO SECRETARIO #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: NOME DE USUARIO: SENHA: NIVEL DE ACESSO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:1
+Quantidade de secretarios:1
+Quantidade de pacientes:2
+Quantidade de logins:2
+Opcao 1 selecionada: CADASTRAR SECRETARIO
+AAAADigite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+Digite o nome do Login:
+Digite a senha:
+LOGIN:viktor
+SENHA:ed8989*
+NIVEL DE ACESSO:
+ACESSO:USER
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:1
+Quantidade de secretarios:2
+Quantidade de pacientes:2
+Quantidade de logins:3
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -30,10 +69,26 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO MEDICO #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: CRM: NOME DE USUARIO: SENHA: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:1
+Quantidade de secretarios:2
+Quantidade de pacientes:2
+Quantidade de logins:3
+Opcao 2 selecionada: CADASTRAR MEDICO
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+CRM:
+Digite o nome do Login:
+Digite a senha:
+LOGIN:soraka
+SENHA:cura$
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:2
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -45,10 +100,23 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:2
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+SISTEMA -> QTDPACIENTES:2
+SISTEMA -> QTDPACIENTES:3
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:3
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -60,10 +128,23 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:3
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+SISTEMA -> QTDPACIENTES:3
+SISTEMA -> QTDPACIENTES:4
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:4
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -75,10 +156,23 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:4
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+SISTEMA -> QTDPACIENTES:4
+SISTEMA -> QTDPACIENTES:5
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:5
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -90,10 +184,23 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:5
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+SISTEMA -> QTDPACIENTES:5
+SISTEMA -> QTDPACIENTES:6
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:6
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -105,10 +212,23 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:6
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+SISTEMA -> QTDPACIENTES:6
+SISTEMA -> QTDPACIENTES:7
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -120,19 +240,34 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### BUSCAR PACIENTES #######################
-NOME DO PACIENTE: PACIENTES ENCONTRADOS:
-1 - TRYNDAMERE (200.171.256-10)
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E TRYNDAMERE
+TRYNDAMERE E TRYNDAMERE
+CUUUUUUUUUUUSYNDRA E TRYNDAMERE
+TAHM KENCH E TRYNDAMERE
+TWISTED FATE E TRYNDAMERE
+VARUS E TRYNDAMERE
+TRYNDAMERE E TRYNDAMERE
+CUUUUUUUUUUU1 - TRYNDAMERE (200.171.256-10)
 2 - TRYNDAMERE (955.141.970-96)
-
 #################### BUSCAR PACIENTES #######################
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR LISTA PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+#################### BUSCAR PACIENTES #######################
 LISTA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -144,14 +279,26 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CONSULTA MEDICA #######################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 4 selecionada: REALIZAR CONSULTA
+PACIENTEPACIENTEid:0
+id:0
+PACIENTE#################### CONSULTA MEDICA #######################
 CPF DO PACIENTE: ---
 -NOME: VAINE
--DATA DE NASCIMENTO: 2/4/1985
+-DATA DE NASCIMENTO: 02/04/1985
 ---
-DATA DA CONSULTA: POSSUI DIABETES: FUMANTE: ALERGIA A MEDICAMENTO: HISTORICO DE CANCER: TIPO DE PELE: 
-############################################################
-#################### CONSULTA MEDICA #######################
+###############################################################
+DATA DA CONSULTA:
+POSSUI DIABETES:
+FUMANTE:
+ALERGIA A MEDICAMENTO:
+HISTORICO DE CANCER:
+TIPO DE PELE:
+PASSOU#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -159,12 +306,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
-#################### CONSULTA MEDICA #######################
-CADASTRO DE LESAO:
-DIAGNOSTICO CLINICO: REGIAO DO CORPO: TAMANHO: ENVIAR PARA CIRURGIA: ENVIAR PARA CRIOTERAPIA: 
+Opcao escolhida: CADASTRAR LESAO
+DIAGNOSTICO CLINICO:
+Diagnóstico lido: CERATOSE SEBORREICA
+REGIAO DO CORPO:
+Região lida: CANELA
+TAMANHO:
+Tamanho lido: 20
+ENVIAR PARA CIRURGIA:
+Enviar para cirurgia lido: 1
+ENVIAR PARA CRIOTERAPIA:
+Enviar para crioterapia lido: 0
 LESAO REGISTRADA COM SUCESSO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -172,12 +326,16 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: GERAR RECEITA MEDICA
+TIPO DE USO:
+DIGITE O NOME DO MEDICAMENTO:
+TIPO DO MEDICAMENTO:
+QUANTIDADE:
+INSTRUCOES DE USO:
 #################### CONSULTA MEDICA #######################
-RECEITA MEDICA:
-TIPO DE USO: NOME DO MEDICAMENTO: TIPO DE MEDICAMENTO: QUANTIDADE: INSTRUCOES DE USO: 
 RECEITA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -185,10 +343,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: SOLICITACAO DE BIOPSIA
+PACIENTE: VAINE
+CPF: 524.456.852-98
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CERATOSE SEBORREICA - CANELA - 20MM
+
+ ()
+19/11/2023
 #################### CONSULTA MEDICA #######################
 SOLICITACAO DE BIOPSIA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -197,11 +364,11 @@ ESCOLHA UMA OPCAO:
 	(5) ENCERRAR CONSULTA
 ############################################################
 #################### CONSULTA MEDICA #######################
+Opcao escolhida: ENCAMINHAMENTO
 ENCAMINHAMENTO:
-ESPECIALIDADE ENCAMINHADA: MOTIVO: 
-ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+ESPECIALIDADE ENCAMINHADA: MOTIVO: ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -209,6 +376,11 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: ENCERRAR CONSULTA
+A:1Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -220,25 +392,31 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### RELATORIO GERAL #######################
-NUMERO TOTAL DE PACIENTES ATENDIDOS: 1
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 6 selecionada: RELATORIO GERAL
+AAAAAAACIRUGRIACIRUGRIANUMERO TOTAL DE PACIENTES ATENDIDOS: 1
 IDADE MEDIA: 42
 DISTRIBUICAO POR GENERO:
 - FEMININO: 2
 - MASCULINO: 2
 - OUTROS: 3
-TAMANHO MEDIO DAS LESOES: 15
+TAMANHO MEDIO DAS LESOES: 20
 NUMERO TOTAL DE LESOES: 2
 NUMERO TOTAL DE CIRURGIAS: 2
 NUMERO TOTAL DE CRIOTERAPIA: 0
-
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+OPCAO:1
 RELATÓRIO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -250,16 +428,18 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 7 selecionada: FILA DE IMPRESSAO
 ################ FILA DE IMPRESSAO MEDICA ##################
 ESCOLHA UMA OPCAO:
 	(1) EXECUTAR FILA DE IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-################ FILA DE IMPRESSAO MEDICA ##################
-EXECUTANDO FILA DE IMPRESSAO:
 1 - TRYNDAMERE (200.171.256-10)
 2 - TRYNDAMERE (955.141.970-96)
-
 RECEITUARIO
 NOME: VAINE
 
@@ -281,14 +461,13 @@ L1 - CERATOSE SEBORREICA - CANELA - 20MM
 
  ()
 19/11/2023
-
 PACIENTE: VAINE
 CPF: 524.456.852-98
 
 ESPECIALIDADE ENCAMINHADA: PSIQUIATRIA
 MOTIVO: PACIENTE PRECISA DE ASSISTENCIA PSICOLOGICA
 
- ()
+()
 19/11/2023
 
 NUMERO TOTAL DE PACIENTES ATENDIDOS: 1
@@ -297,19 +476,20 @@ DISTRIBUICAO POR GENERO:
 - FEMININO: 2
 - MASCULINO: 2
 - OUTROS: 3
-TAMANHO MEDIO DAS LESOES: 15
+TAMANHO MEDIO DAS LESOES: 20
 NUMERO TOTAL DE LESOES: 2
 NUMERO TOTAL DE CIRURGIAS: 2
 NUMERO TOTAL DE CRIOTERAPIA: 0
-
-
 PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU ANTERIOR
-############################################################
 ################ FILA DE IMPRESSAO MEDICA ##################
 ESCOLHA UMA OPCAO:
 	(1) EXECUTAR FILA DE IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -321,3 +501,51 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 8 selecionada: FINALIZAR O PROGRAMA
+PATH:Resultados/Gabriel/main/Casos/2
+PATH:Resultados/Gabriel/main/Casos/2/saida1 - TRYNDAMERE (200.171.256-10)
+2 - TRYNDAMERE (955.141.970-96)
+RECEITUARIO
+NOME: VAINE
+
+USO TOPICO
+
+NEBACETIM
+1 POMADA
+
+USAR 2X AOS DIA, PRINCIPALMENTE ANTES DE SAIR NO SOL
+
+ ()
+19/11/2023
+
+PACIENTE: VAINE
+CPF: 524.456.852-98
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CERATOSE SEBORREICA - CANELA - 20MM
+
+ ()
+19/11/2023
+PACIENTE: VAINE
+CPF: 524.456.852-98
+
+ESPECIALIDADE ENCAMINHADA: PSIQUIATRIA
+MOTIVO: PACIENTE PRECISA DE ASSISTENCIA PSICOLOGICA
+
+()
+19/11/2023
+
+NUMERO TOTAL DE PACIENTES ATENDIDOS: 1
+IDADE MEDIA: 42
+DISTRIBUICAO POR GENERO:
+- FEMININO: 2
+- MASCULINO: 2
+- OUTROS: 3
+TAMANHO MEDIO DAS LESOES: 20
+NUMERO TOTAL DE LESOES: 2
+NUMERO TOTAL DE CIRURGIAS: 2
+NUMERO TOTAL DE CRIOTERAPIA: 0

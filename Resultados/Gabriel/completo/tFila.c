@@ -22,12 +22,19 @@ tFila *criaFila()
 void desalocaFila(void* fi)
 {
     tFila* f = (tFila*) fi;
-    for (int i = 0; i < f -> tamanho; i++)
+    if (f != NULL)
     {
-        desalocaDocumento(f -> documento[i]);
+        if (f -> documento != NULL)
+        {
+            for (int i = 0; i < f -> tamanho; i++)
+            {
+                if (f -> documento[i] != NULL)
+                    desalocaDocumento(f -> documento[i]);
+            }
+            free(f -> documento);
+        }
+        free(f);
     }
-    free(f -> documento);
-    free(f);
 }
 
 void insereDocumentoFila(void *fi, void *dado, func_ptr_imprimeNaTela imprimeNaTela,

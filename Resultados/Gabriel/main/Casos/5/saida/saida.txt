@@ -1,9 +1,41 @@
 ################################################
-DIGITE O CAMINHO DO BANCO DE DADOS: ################################################
-Caminho do banco de dados: Casos/5/../../
-Caminho da pasta de saida: Casos/5/saida
-######################## ACESSO MINI-SADE ######################
-DIGITE SEU LOGIN: DIGITE SUA SENHA: ###############################################################
+DIGITE O CAMINHO DO BANCO DE DADOS:
+################################################
+Caminho do banco de dados: Resultados/Gabriel/main/Casos/5
+Caminho da pasta de saida: ../../
+CAMINHO:Resultados/Gabriel/main/Casos/5/../../sistema.bin
+cucucucuu
+ARQUIVO PATH:Resultados/Gabriel/main/Casos/5
+NEEEOME:VAINE
+bbbbbbbbbAAAAAAAAAAAAbbbbbbbbbAAAAAAAAAAAACONSULTAS:2
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+NEEEOME:SYNDRA
+bbbbbbbbbAAAAAAAAAAAACONSULTAS:1
+NEEEOME:TAHM KENCH
+CONSULTAS:0
+NEEEOME:TWISTED FATE
+CONSULTAS:0
+NEEEOME:VARUS
+CONSULTAS:0
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+QTD PACIETNE:7
+PACIENTE[0]:VAINEPACIENTE[1]:TRYNDAMEREPACIENTE[2]:SYNDRAPACIENTE[3]:TAHM KENCHPACIENTE[4]:TWISTED FATEPACIENTE[5]:VARUSPACIENTE[6]:TRYNDAMERE######################## ACESSO MINI-SADE ######################DIGITE SEU LOGIN:
+DIGITE SUA SENHA:
+###############################################################
+LOGIN:heimer
+SENHA:science!
+NLOGIN:0ACESSO:ADMIN
+AAAAAAdmin
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -15,8 +47,21 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: CPF JA EXISTENTE. OPERACAO NAO PERMITIDA.
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+CPF JA EXISTENTE. OPERACAO NAO PERMITIDA.
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -28,10 +73,23 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CADASTRO PACIENTE #######################
-NOME COMPLETO: CPF: DATA DE NASCIMENTO: TELEFONE: GENERO: 
-CADASTRO REALIZADO COM SUCESSO. PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
-###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 3 selecionada: CADASTRAR PACIENTE
+Digite o nome:
+Digite o cpf:
+Digite a data de nascimento:
+Digite o telefone:
+Digite o genero:
+SISTEMA -> QTDPACIENTES:7
+SISTEMA -> QTDPACIENTES:8
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU INICIAL
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -43,18 +101,34 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### BUSCAR PACIENTES #######################
-NOME DO PACIENTE: PACIENTES ENCONTRADOS:
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E VAINE
+CUUUUUUUUUUUTRYNDAMERE E VAINE
+SYNDRA E VAINE
+TAHM KENCH E VAINE
+TWISTED FATE E VAINE
+VARUS E VAINE
+TRYNDAMERE E VAINE
+LEONA E VAINE
 1 - VAINE (524.456.852-98)
-
 #################### BUSCAR PACIENTES #######################
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR LISTA PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+#################### BUSCAR PACIENTES #######################
 LISTA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -66,14 +140,40 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CONSULTA MEDICA #######################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
+Opcao 4 selecionada: REALIZAR CONSULTA
+PACIENTEPACIENTEid:0
+id:0
+id:1
+id:1
+id:2
+id:2
+id:3
+id:3
+id:4
+id:4
+id:5
+id:5
+id:6
+id:6
+id:7
+id:7
+PACIENTE#################### CONSULTA MEDICA #######################
 CPF DO PACIENTE: ---
 -NOME: LEONA
 -DATA DE NASCIMENTO: 15/10/1980
 ---
-DATA DA CONSULTA: POSSUI DIABETES: FUMANTE: ALERGIA A MEDICAMENTO: HISTORICO DE CANCER: TIPO DE PELE: 
-############################################################
-#################### CONSULTA MEDICA #######################
+###############################################################
+DATA DA CONSULTA:
+POSSUI DIABETES:
+FUMANTE:
+ALERGIA A MEDICAMENTO:
+HISTORICO DE CANCER:
+TIPO DE PELE:
+PASSOU#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -81,12 +181,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
-#################### CONSULTA MEDICA #######################
-CADASTRO DE LESAO:
-DIAGNOSTICO CLINICO: REGIAO DO CORPO: TAMANHO: ENVIAR PARA CIRURGIA: ENVIAR PARA CRIOTERAPIA: 
+Opcao escolhida: CADASTRAR LESAO
+DIAGNOSTICO CLINICO:
+Diagnóstico lido: MELANOMA
+REGIAO DO CORPO:
+Região lida: MAO
+TAMANHO:
+Tamanho lido: 30
+ENVIAR PARA CIRURGIA:
+Enviar para cirurgia lido: 1
+ENVIAR PARA CRIOTERAPIA:
+Enviar para crioterapia lido: 0
 LESAO REGISTRADA COM SUCESSO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -94,12 +201,16 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: GERAR RECEITA MEDICA
+TIPO DE USO:
+DIGITE O NOME DO MEDICAMENTO:
+TIPO DO MEDICAMENTO:
+QUANTIDADE:
+INSTRUCOES DE USO:
 #################### CONSULTA MEDICA #######################
-RECEITA MEDICA:
-TIPO DE USO: NOME DO MEDICAMENTO: TIPO DE MEDICAMENTO: QUANTIDADE: INSTRUCOES DE USO: 
 RECEITA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -107,10 +218,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: SOLICITACAO DE BIOPSIA
+PACIENTE: LEONA
+CPF: 245.632.548-10
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - MELANOMA - MAO - 30MM
+
+ ()
+10/10/2020
 #################### CONSULTA MEDICA #######################
 SOLICITACAO DE BIOPSIA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -119,11 +239,11 @@ ESCOLHA UMA OPCAO:
 	(5) ENCERRAR CONSULTA
 ############################################################
 #################### CONSULTA MEDICA #######################
+Opcao escolhida: ENCAMINHAMENTO
 ENCAMINHAMENTO:
-ESPECIALIDADE ENCAMINHADA: MOTIVO: 
-ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+ESPECIALIDADE ENCAMINHADA: MOTIVO: ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -131,6 +251,11 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: ENCERRAR CONSULTA
+A:1Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -142,25 +267,31 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### RELATORIO GERAL #######################
-NUMERO TOTAL DE PACIENTES ATENDIDOS: 4
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
+Opcao 6 selecionada: RELATORIO GERAL
+AAAAAAACIRUGRIANUMERO TOTAL DE PACIENTES ATENDIDOS: 3
 IDADE MEDIA: 42
 DISTRIBUICAO POR GENERO:
 - FEMININO: 3
 - MASCULINO: 2
 - OUTROS: 3
-TAMANHO MEDIO DAS LESOES: 17
-NUMERO TOTAL DE LESOES: 7
-NUMERO TOTAL DE CIRURGIAS: 5
-NUMERO TOTAL DE CRIOTERAPIA: 2
-
+TAMANHO MEDIO DAS LESOES: 6
+NUMERO TOTAL DE LESOES: 5
+NUMERO TOTAL DE CIRURGIAS: 1
+NUMERO TOTAL DE CRIOTERAPIA: 0
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+OPCAO:1
 RELATÓRIO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -172,15 +303,17 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
+Opcao 7 selecionada: FILA DE IMPRESSAO
 ################ FILA DE IMPRESSAO MEDICA ##################
 ESCOLHA UMA OPCAO:
 	(1) EXECUTAR FILA DE IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-################ FILA DE IMPRESSAO MEDICA ##################
-EXECUTANDO FILA DE IMPRESSAO:
 1 - VAINE (524.456.852-98)
-
 RECEITUARIO
 NOME: LEONA
 
@@ -202,35 +335,35 @@ L1 - MELANOMA - MAO - 30MM
 
  ()
 10/10/2020
-
 PACIENTE: LEONA
 CPF: 245.632.548-10
 
 ESPECIALIDADE ENCAMINHADA: CARDIOLOGIA
 MOTIVO: REALIZAR CARDIOGRAMA COMPLETO PARA CIRURGIA
 
- ()
+()
 10/10/2020
 
-NUMERO TOTAL DE PACIENTES ATENDIDOS: 4
+NUMERO TOTAL DE PACIENTES ATENDIDOS: 3
 IDADE MEDIA: 42
 DISTRIBUICAO POR GENERO:
 - FEMININO: 3
 - MASCULINO: 2
 - OUTROS: 3
-TAMANHO MEDIO DAS LESOES: 17
-NUMERO TOTAL DE LESOES: 7
-NUMERO TOTAL DE CIRURGIAS: 5
-NUMERO TOTAL DE CRIOTERAPIA: 2
-
-
+TAMANHO MEDIO DAS LESOES: 6
+NUMERO TOTAL DE LESOES: 5
+NUMERO TOTAL DE CIRURGIAS: 1
+NUMERO TOTAL DE CRIOTERAPIA: 0
 PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU ANTERIOR
-############################################################
 ################ FILA DE IMPRESSAO MEDICA ##################
 ESCOLHA UMA OPCAO:
 	(1) EXECUTAR FILA DE IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR SECRETARIO
@@ -242,3 +375,50 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:8
+Quantidade de logins:4
+Opcao 8 selecionada: FINALIZAR O PROGRAMA
+PATH:Resultados/Gabriel/main/Casos/5
+PATH:Resultados/Gabriel/main/Casos/5/saida1 - VAINE (524.456.852-98)
+RECEITUARIO
+NOME: LEONA
+
+USO ORAL
+
+DIPIRONA
+30 COMPRIMIDO
+
+USAR EM CASO DE MUITA DOR
+
+ ()
+10/10/2020
+
+PACIENTE: LEONA
+CPF: 245.632.548-10
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - MELANOMA - MAO - 30MM
+
+ ()
+10/10/2020
+PACIENTE: LEONA
+CPF: 245.632.548-10
+
+ESPECIALIDADE ENCAMINHADA: CARDIOLOGIA
+MOTIVO: REALIZAR CARDIOGRAMA COMPLETO PARA CIRURGIA
+
+()
+10/10/2020
+
+NUMERO TOTAL DE PACIENTES ATENDIDOS: 3
+IDADE MEDIA: 42
+DISTRIBUICAO POR GENERO:
+- FEMININO: 3
+- MASCULINO: 2
+- OUTROS: 3
+TAMANHO MEDIO DAS LESOES: 6
+NUMERO TOTAL DE LESOES: 5
+NUMERO TOTAL DE CIRURGIAS: 1
+NUMERO TOTAL DE CRIOTERAPIA: 0

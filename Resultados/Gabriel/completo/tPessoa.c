@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <ctype.h>
 #include "tPessoa.h"
 
 struct tPessoa{
@@ -20,11 +21,30 @@ tPessoa* criaPessoa()
 
 void lerPessoa(tPessoa* p)
 {
-    scanf("%s", p -> nome);
-    scanf("%s", p -> cpf);
-    scanf("%s", p -> dataNascimento);
-    scanf("%s", p -> telefone);
-    scanf("%s", p -> genero);
+    printf("Digite o nome:\n");
+    scanf(" %[^\n]", p->nome); // O espaço antes do %[^\n] consome possíveis caracteres de nova linha deixados no buffer
+    
+    if (p)
+    {
+        int i = 0;
+        while (p -> nome[i])
+        {
+            p -> nome[i] = toupper((unsigned char) p -> nome[i]);
+            i++;
+        }
+    }
+
+    printf("Digite o cpf:\n");
+    scanf("%s", p->cpf);
+
+    printf("Digite a data de nascimento:\n");
+    scanf("%s", p->dataNascimento);
+
+    printf("Digite o telefone:\n");
+    scanf("%s", p->telefone);
+
+    printf("Digite o genero:\n");
+    scanf("%s", p->genero);
 }
 
 void printPessoa(tPessoa* p)
@@ -37,14 +57,21 @@ void printNomeDataNascPessoa()
     return;
 }
 
-void escreveBinPessoa()
+void atribuiNome(tPessoa* pessoa, const char* nome)
 {
-
+    strcpy(pessoa -> nome, nome);
 }
 
-void lerBinPessoa()
+void escreveBinPessoa(tPessoa *pessoa, FILE *arquivo)
 {
+    fwrite(pessoa, sizeof(tPessoa), 1, arquivo);
+}
 
+tPessoa* lerBinPessoa(FILE *arquivo)
+{
+    tPessoa* pessoa = (tPessoa*) malloc(sizeof(tPessoa));
+    fread(pessoa, sizeof(tPessoa), 1, arquivo);
+    return pessoa;
 }
 
 bool comparaCPFPessoa(tPessoa* p, const char* cpf)
@@ -60,6 +87,11 @@ char* obtemCPFPessoa(tPessoa* p)
 char* obtemNomePessoa(tPessoa* p)
 {
 	return p -> nome;
+}
+
+char* obtemDataPessoa(tPessoa* p)
+{
+	return p -> dataNascimento;
 }
 
 int calculaIdadePessoa(tPessoa* p)
@@ -102,9 +134,21 @@ int calculaIdadePessoa(tPessoa* p)
     return idade;
 }
 
-bool comparaGeneroPessoa(tPessoa* p, const char* genero)
+int comparaGeneroPessoa(tPessoa* p)
 {
-    return (!strcmp(p -> genero, genero));
+    if (!strcmp(p -> genero, "FEMININO"))
+    {
+        return 0;
+    }
+    if (!strcmp(p -> genero, "MASCULINO"))
+    {
+        return 1;
+    }
+    if (!strcmp(p -> genero, "OUTROS"))
+    {
+        return 2;
+    }
+    return -1;
 }
 
 void desalocaPessoa(tPessoa* p)

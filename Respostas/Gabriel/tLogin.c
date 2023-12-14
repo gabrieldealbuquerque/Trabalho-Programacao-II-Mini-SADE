@@ -20,6 +20,11 @@ void TelaLogin()
 
 //tem que ter uma lista de logins dentro de tSistema, então eu só passo tSistema aqui e resolvo o resto lá (tLogin** listaDeLogins, int qtdLogins)
 
+size_t tamanhoLogin(tLogin* m)
+{
+    return sizeof(*m);
+}
+
 tLogin* criaLogin()
 {
 	tLogin* login = (tLogin*) calloc (1, sizeof(tLogin));
@@ -31,6 +36,8 @@ int autenticaLogin(const char* login, const char* senha, void* sis)
 	tSistema* sistema = (tSistema*) sis;
 	for (int i = 0; i < obterQtdLogins(sistema); i++)
 	{
+		printf("LOGIN:%s\n", obterNomeLogin(sistema, i));
+		printf("SENHA:%s\n", obterSenhaLogin(sistema, i));
 		if (!strcmp(obterNomeLogin(sistema, i), login))
 		{
 			if (!strcmp(obterSenhaLogin(sistema, i), senha))
@@ -38,6 +45,7 @@ int autenticaLogin(const char* login, const char* senha, void* sis)
 				return i;
 			}
 		}
+		printf("I:%d", i);
 	}
 	return -1;
 }
@@ -45,9 +53,10 @@ int autenticaLogin(const char* login, const char* senha, void* sis)
 void leLogin(tLogin* login)
 {
 	printf("Digite o nome do Login:\n");
-	scanf("%s", login -> login);
+    scanf("%s", login -> login);
 	printf("Digite a senha:\n");
-	scanf("%s", login -> senha);
+    scanf("%s", login -> senha);
+	printf("LOGIN:%s\nSENHA:%s\n", login -> login, login -> senha);
 }
 
 tLogin* leLoginAcesso()
@@ -57,6 +66,8 @@ tLogin* leLoginAcesso()
     scanf("%s", acesso -> login);
     printf("DIGITE SUA SENHA:\n");
     scanf("%s", acesso -> senha);
+
+	return acesso;
 }
 
 void AtribuiTipoAcesso(tLogin* login, int EhSecretario)
@@ -139,4 +150,13 @@ void desalocaLogin(void* login)
 {
 	tLogin* l = (tLogin*) login;
 	free(l);
+}
+
+void salvar_login_em_binario(tLogin *login, FILE* arquivo) {
+    fwrite(login, sizeof(struct tLogin), 1, arquivo);
+}
+
+// Função para ler um login de binário
+void ler_login_de_binario(tLogin *login, FILE* arquivo) {
+    fread(login, sizeof(struct tLogin), 1, arquivo);
 }

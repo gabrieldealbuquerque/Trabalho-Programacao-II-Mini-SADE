@@ -1,39 +1,92 @@
 #ifndef _TSISTEMA_H_
 #define _TSISTEMA_H_
 
-typedef struct tDocumento tDocumento;
+#include "tMedico.h"
+#include "tSecretario.h"
+#include "tPaciente.h"
+#include "tDocumento.h"
+#include <stdbool.h>
+#include "tLogin.h"
 
-/**
- * Funções de callback que serão utilizadas para imprimir o documento na tela,
- * em arquivo e desalocar o dado genérico, respectivamente.
- */
-typedef void (*func_ptr_imprimeNaTela)(void *dado);
-typedef void (*func_ptr_imprimeEmArquivo)(void *dado, char *path);
-typedef void (*func_ptr_desaloca)(void *dado);
+typedef struct tSistema tSistema;
+typedef struct tLista_busca tLista_busca;
 
-/**
- * Função que recebe um dado genérico (representando um tipo de documento) e suas funções de callback.
- * A função cria um Documento e retorna um ponteiro para ele.
- */
-tDocumento *criaDocumento(void *dado, func_ptr_imprimeNaTela imprimeNaTela,
-                          func_ptr_imprimeEmArquivo ImprimeEmArquivo,
-                          func_ptr_desaloca desaloca);
+tLista_busca* criaListaBusca();
+void desalocaListaBuscaGenerico(void* lista);
+void desalocaListaBusca(void* lista);
+void imprimeNaTelaListaBusca(void* lista);
+void imprimeEmArquivoListaBusca(void* lista, char* nomeArquivo);
+int obterTamanhoLista(void* l);
 
-/**
- * Função que recebe um Documento e o desaloca. O dado genérico também deve ser desalocado
- * dentro dessa função.
- */
-void desalocaDocumento(tDocumento *doc);
 
-/**
- * Função que recebe um Documento genérico e o imprime na tela.
- */
-void imprimeNaTelaDocumento(tDocumento *doc);
+void Sistema(const char* caminho);
 
-/**
- * Função que recebe um Documento genérico e o imprime em um arquivo.
- * O path representa o caminho até o diretório onde o arquivo será criado ou editado.
- */
-void imprimeEmArquivoDocumento(tDocumento *doc, char *path);
+void InicializaSade(tSistema* sistema);
+
+//void adicionaLesaoSade();
+
+//void adicionaConsultaSade();
+
+int buscaSecretarioPorCPF(const char* cpf, tSistema* sistema);
+
+int buscaMedicoPorCPF(const char* cpf, tSistema* sistema);
+
+int buscaPacientePorCPF(const char* cpf, tSistema* sistema);
+
+int buscaPacientePorNome(const char* nome, tSistema* sistema);
+
+//void printDadosSade();
+
+char* obtemPathBD(tSistema* sistema);
+
+void salvar_sistema_em_binario(tSistema* sistema, const char* caminho, const char* caminhoBin);
+
+void ler_sistema_de_binario(tSistema* sistema, const char* caminho, const char*  caminhoBin);
+
+//void carregarColecaoBD(tSistema* sistema);
+
+tLista_busca* adicionaResultadoBusca(tSistema* sistema, char* nome);
+
+void executaCadastroSecretario(tSistema* sistema);
+
+void executaCadastroMedico(tSistema* sistema);
+
+void executaCadastroPaciente(tSistema* sistema);
+
+void executaConsultaMedica(tSistema* sistema, int idMedico);
+
+void executaFilaImpressao(tSistema* sistema);
+
+void executaBusca(tSistema* sistema);
+
+void executaRelatorioGeral(tSistema* sistema);
+
+void desalocaDadosSade(tSistema* sistema);
+
+int obterQtdLogins(tSistema* sistema);
+
+char* obterNomeLogin(tSistema* sistema, int i);
+
+char* obterSenhaLogin(tSistema* sistema, int i);
+
+void ImprimeMenuPrincipal(int);
+
+void TrataOpcao(int opcao, tSistema* sistema, int);
+
+int TrataOpcaoConsulta(int opcao, int idPaciente, int idMedico, tSistema* sistema);
+
+void atualizaListaDeLoginsGenerico(void* pessoa, tSistema* sistema, char* (*retornaLogin)(void*), char* (*retornaSenha)(void*), char* (*retornaAcesso)(void*));
+
+void atualizaListadeHumanos(void** lista, void* adicionar, int qtd, void (*funcaoAdicionar)(void**, void*, int));
+
+int obtemQtdPacientes(tSistema* sistema);
+
+tPaciente** obtemPacientes(tSistema* sistema);
+
+void ImprimeMenuConsulta();
+
+void ler_lista_de_binario(tLista_busca *lista, FILE* arquivo);
+
+void salvar_lista_em_binario(tLista_busca *lista, FILE* arquivo);
 
 #endif

@@ -22,6 +22,8 @@ void adicionaIdLogin(tLogin* login, int id);
 
 char* obterLogin(tLogin* login);
 
+size_t tamanhoLogin(tLogin* m);
+
 char* obterSenha(tLogin* login);
 
 char* obterAcesso(tLogin* login);
@@ -35,5 +37,9 @@ void atualizaAcesso(tLogin* login, const char* acesso);
 int retornaIdLogin(tLogin* login);
 
 void desalocaLogin(void* login);
+
+void salvar_login_em_binario(tLogin *login, FILE* arquivo);
+
+void ler_login_de_binario(tLogin *login, FILE* arquivo);
 
 #endif

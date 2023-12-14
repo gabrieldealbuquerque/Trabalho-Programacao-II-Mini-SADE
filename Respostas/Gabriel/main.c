@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "tSistema.h"
 
-int main()
+int main(int argc, char **argv)
 {
-    Sistema();
+    const char* caminhoConfig = argv[1];
+    Sistema(caminhoConfig);
     return 0;
 }

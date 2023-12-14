@@ -94,40 +94,41 @@ void imprimeEmArquivoReceita(void *dado, char *path)
     if (dado != NULL)
     {
         tReceita *receita = (tReceita *)dado;
-        char nomedodiretorio[1000];
-        sprintf(nomedodiretorio,"%s/receita.txt", path);
-        FILE *file = fopen(nomedodiretorio, "a");
+        char filePath[1500];  // Adjust the size as needed
+        sprintf(filePath, "%s/%s", path, NOME_ARQUIVO_RECEITA);
+        printf("CAMINHO:%s", filePath);
+        FILE *re = fopen(filePath, "a");
 
-        if (file == NULL)
+        if (re == NULL)
         {
             printf("Erro ao abrir o arquivo %s para escrita.\n", path);
             exit(1);
         }
 
         // Usando fprintf para escrever no arquivo
-        fprintf(file, "RECEITUARIO\n");
-        fprintf(file, "NOME: %s\n", receita->nomePaciente);
-        fprintf(file, "\n");
+        fprintf(re, "RECEITUARIO\n");
+        fprintf(re, "NOME: %s\n", receita->nomePaciente);
+        fprintf(re, "\n");
 
         if (receita->tipoUso == ORAL)
         {
-            fprintf(file, "USO ORAL\n");
+            fprintf(re, "USO ORAL\n");
         }
         else if (receita->tipoUso == TOPICO)
         {
-            fprintf(file, "USO TOPICO\n");
+            fprintf(re, "USO TOPICO\n");
         }
 
-        fprintf(file, "\n");
-        fprintf(file, "%s\n", receita->nomeMedicamento);
-        fprintf(file, "%d %s\n", receita->qntd, receita->tipoMedicamento);
-        fprintf(file, "\n");
-        fprintf(file, "%s\n", receita->instrucoes);
-        fprintf(file, "\n");
-        fprintf(file, "%s (%s)\n", receita->nomeMedico, receita->CRM);
-        fprintf(file, "%s\n", receita->dataStr);
+        fprintf(re, "\n");
+        fprintf(re, "%s\n", receita->nomeMedicamento);
+        fprintf(re, "%d %s\n", receita->qntd, receita->tipoMedicamento);
+        fprintf(re, "\n");
+        fprintf(re, "%s\n", receita->instrucoes);
+        fprintf(re, "\n");
+        fprintf(re, "%s (%s)\n", receita->nomeMedico, receita->CRM);
+        fprintf(re, "%s\n", receita->dataStr);
 
         // Fecha o arquivo
-        fclose(file);
+        fclose(re);
     }
 }

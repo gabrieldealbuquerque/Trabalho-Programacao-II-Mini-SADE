@@ -1,0 +1,103 @@
+==454549== Memcheck, a memory error detector
+==454549== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==454549== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==454549== Command: Resultados/Gabriel/completo/prog Resultados/Gabriel/completo/Casos/5
+==454549== Parent PID: 454548
+==454549== 
+==454549== Invalid read of size 8
+==454549==    at 0x110635: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==  Address 0x4a91610 is 0 bytes inside a block of size 180 free'd
+==454549==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==454549==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10C723: desalocaPaciente (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10EE23: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==  Block was alloc'd at
+==454549==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==454549==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10C228: criaPaciente (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10ED72: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549== 
+==454549== Invalid read of size 8
+==454549==    at 0x11067A: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==  Address 0x4a91610 is 0 bytes inside a block of size 180 free'd
+==454549==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==454549==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10C723: desalocaPaciente (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10EE23: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==  Block was alloc'd at
+==454549==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==454549==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10C228: criaPaciente (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10ED72: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549== 
+==454549== Invalid read of size 4
+==454549==    at 0x10B698: obtemTamanhoLesao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x110684: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==  Address 0x414e4f45a0 is not stack'd, malloc'd or (recently) free'd
+==454549== 
+==454549== 
+==454549== Process terminating with default action of signal 11 (SIGSEGV)
+==454549==  Access not within mapped region at address 0x414E4F45A0
+==454549==    at 0x10B698: obtemTamanhoLesao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x110684: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==  If you believe this happened as a result of a stack
+==454549==  overflow in your program's main thread (unlikely but
+==454549==  possible), you can try to increase the size of the
+==454549==  main thread stack using the --main-stacksize= flag.
+==454549==  The main thread stack size used in this run was 8388608.
+==454549== 
+==454549== HEAP SUMMARY:
+==454549==     in use at exit: 19,421 bytes in 74 blocks
+==454549==   total heap usage: 94 allocs, 20 frees, 25,325 bytes allocated
+==454549== 
+==454549== 180 bytes in 1 blocks are definitely lost in loss record 28 of 46
+==454549==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==454549==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10BCA9: criaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109FF9: ler_consulta_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10C56A: ler_paciente_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x1114D2: ler_sistema_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10DD7A: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549== 
+==454549== 216 bytes in 1 blocks are definitely lost in loss record 31 of 46
+==454549==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==454549==    by 0x10B763: criaLogin (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10BCBA: criaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109FF9: ler_consulta_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10C56A: ler_paciente_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x1114D2: ler_sistema_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x10DD7A: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==454549== 
+==454549== LEAK SUMMARY:
+==454549==    definitely lost: 396 bytes in 2 blocks
+==454549==    indirectly lost: 0 bytes in 0 blocks
+==454549==      possibly lost: 0 bytes in 0 blocks
+==454549==    still reachable: 19,025 bytes in 72 blocks
+==454549==         suppressed: 0 bytes in 0 blocks
+==454549== Reachable blocks (those to which a pointer was found) are not shown.
+==454549== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==454549== 
+==454549== For lists of detected and suppressed errors, rerun with: -s
+==454549== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)

@@ -18,31 +18,36 @@ struct tConsulta{
     char pele[3];
     void* receita;
     tLesao** lesoes;
-    tBiopsia** biopsia;
+    tBiopsia* biopsia;
     tEncaminhamento* encaminhamento;
+    int qtdbiopsias;
     int qtdLesoes;
+    int medicoVazio;
 };
 
 tConsulta* criaConsulta()
 {
-    tConsulta* consulta = (tConsulta*)malloc(sizeof(tConsulta));
-
+    tConsulta* consulta = (tConsulta*)calloc(1, sizeof(tConsulta));
+    consulta -> qtdLesoes = 0;
+    consulta -> qtdbiopsias = 0;
     if (consulta == NULL) {
         // Handle memory allocation failure
         fprintf(stderr, "Memory allocation failed for tConsulta.\n");
         exit(1);  // Or return NULL, depending on your error-handling strategy
     }
-
-    consulta->qtdLesoes = 0;
     return consulta;
 }
 
 void ConsultaSemMedico(tConsulta* consulta)
 {
     consulta -> medico = criaMedicoVazio();
+    consulta -> medicoVazio = 1;
 }
 
-
+void atribuiMedicoConsulta(tConsulta* consulta, tMedico* medico)
+{
+    consulta -> medico = medico;
+}
 
 void leConsulta(tConsulta* c)
 {
@@ -65,14 +70,48 @@ void printConsulta(tConsulta* c)
 
 }
 
-void escreveBinConsulta(tConsulta* c)
-{
-
+void salvar_consulta_em_binario(tConsulta* consulta, FILE* arquivo) {
+    fwrite(consulta, sizeof(tConsulta),1, arquivo);
+    fwrite(&consulta -> qtdbiopsias, sizeof(int), 1, arquivo);
+    fwrite(&consulta -> qtdLesoes, sizeof(int), 1, arquivo);
+    if (!consulta -> medicoVazio)
+    escreveBinMedico(consulta -> medico, arquivo);
+    if (consulta -> qtdbiopsias == 0)
+    {
+        if (consulta->qtdLesoes > 0)
+        {
+            for (int i = 0; i < consulta->qtdLesoes; ++i) {
+                escreveBinLesao(consulta->lesoes[i], arquivo);
+            }
+            
+        }
+    }
 }
 
-void lerBinConsulta(tConsulta* c)
-{
-
+// Função para ler uma consulta de binário
+void ler_consulta_de_binario(tConsulta* consulta, FILE* arquivo) {
+    fread(consulta, sizeof(tConsulta), 1, arquivo);
+    fread(&consulta->qtdbiopsias, sizeof(int), 1, arquivo);
+    fread(&consulta->qtdLesoes, sizeof(int), 1, arquivo);
+    consulta -> medico = criaMedico();
+    printf("bbbbbbbbb");
+    if (!consulta -> medicoVazio)
+        lerBinMedico(consulta -> medico, arquivo);
+    
+     printf("AAAAAA");
+    if (consulta -> qtdbiopsias == 0)
+    {
+        if (consulta->qtdLesoes > 0)
+        {
+            consulta->lesoes = (tLesao**)malloc(consulta->qtdLesoes * sizeof(tLesao*));
+            printf("AAAAAA");
+            for (int i = 0; i < consulta->qtdLesoes; ++i) {
+                consulta -> lesoes[i] = criaLesao();
+                lerBinLesao(consulta->lesoes[i], arquivo);
+            }
+        }
+    }
+    printf("AAAAAA");
 }
 
 void adicionarLesaoConsulta(tConsulta* c)
@@ -81,6 +120,7 @@ void adicionarLesaoConsulta(tConsulta* c)
     c -> lesoes = (tLesao**) realloc(c -> lesoes, c -> qtdLesoes * sizeof(tLesao*));
     c -> lesoes[c -> qtdLesoes-1] = criaLesao();
     lerLesao(c -> lesoes[c -> qtdLesoes-1]);
+    defineIdLesao(c -> lesoes[c -> qtdLesoes-1], c -> qtdLesoes);
 }
 
 int obtemIdConsulta(tConsulta* c)
@@ -130,18 +170,39 @@ void tratarReceita(char* nomePaciente, tConsulta*c, void* m)
     scanf("%d", &qtd);
     printf("INSTRUCOES DE USO:\n");
     scanf(" %299[^\n]", instrucoes);
+    int dia = 0,mes = 0,ano = 0;
+    sscanf(obtemDataConsulta(c), "%d/%d/%d", &dia, &mes, &ano);
+    sprintf(obtemDataConsulta(c), "%d/%02d/%d", dia,mes,ano);
     c -> receita = criaReceita(nomePaciente, tipoUso, nomeMedicamento, tipoMedicamento, instrucoes, qtd, obtemNomeMedico(medico), obtemCRMMedico(medico), obtemDataConsulta(c));
 }
 
-void tratarBiopsia(tConsulta* consulta, char* nome, char* cpf)
+int tratarBiopsia(tConsulta* consulta, char* nome, char* cpf)
 {  
-    consulta -> biopsia = (tBiopsia**) realloc (consulta -> biopsia, sizeof(tBiopsia*) * consulta -> qtdLesoes);
-    for (int i = 0; i < consulta -> qtdLesoes; i++)
+    int cirurgia = 0;
+    if (consulta -> qtdLesoes > 0)
     {
-        consulta -> biopsia[i] = criaBiopsia(nome, cpf, obtemRotuloLesao(consulta -> lesoes[i]), 
-        obtemDiagnosticoLesao(consulta -> lesoes[i]), obtemRegiaoLesao(consulta -> lesoes[i]), obtemTamanhoLesao(consulta -> lesoes[i]),
-        obtemNomeMedico(consulta -> medico), obtemCRMMedico(consulta -> medico), obtemDataConsulta(consulta));
+        for (int i = 0; i < consulta -> qtdLesoes; i++)
+        {
+            if (obtemCirurgiaLesao(retornaLesoes(consulta)[i]))
+            {
+                cirurgia++;
+            }
+        }
     }
+    if(cirurgia)
+    {
+        consulta -> qtdbiopsias = consulta -> qtdLesoes;
+        consulta -> biopsia = criaBiopsia();
+        atribuiValoresBiopsia(consulta -> biopsia, nome, cpf, consulta -> qtdLesoes, 
+        consulta -> lesoes, obtemNomeMedico(consulta -> medico), obtemCRMMedico(consulta -> medico), obtemDataConsulta(consulta));
+        imprimeNaTelaBiopsia(consulta -> biopsia);
+        return 1;
+    }
+    else
+    {
+        printf("Sem lesoes para gerar biopsia.\n");
+    }
+    return 0;
 }
 
 void tratarEncaminhamento(tConsulta* consulta, char* nome, char* cpf)
@@ -154,7 +215,7 @@ tReceita* retornaReceita(tConsulta* c)
     return c -> receita;
 }
 
-tBiopsia** retornaBiopsia(tConsulta* c)
+tBiopsia* retornaBiopsia(tConsulta* c)
 {
     return c -> biopsia;
 }
@@ -167,6 +228,11 @@ tMedico* retornaMedico(tConsulta* c)
 tEncaminhamento* retornaEncaminhamento(tConsulta* c)
 {
     return c -> encaminhamento;
+}
+
+tLesao** retornaLesoes(tConsulta* c)
+{
+    return c -> lesoes;
 }
 
 char* obtemDataConsulta(tConsulta* c)
@@ -182,12 +248,20 @@ void defineMedicoConsulta(tConsulta* c, void* m)
 
 void desalocaConsulta(tConsulta* c)
 {
-    desalocaMedico(c -> medico);
-    desalocaReceita(c -> receita);
-    for (int i = 0; i < c -> qtdLesoes; i++)
+    if (c != NULL)
     {
-        desalocaLesao(c -> lesoes[i]);
+        if (c->medico != NULL)
+        {
+            desalocaMedico(c->medico);
+        }
+        if (c -> lesoes != NULL && c -> biopsia == NULL)
+        {
+            for(int i = 0; i < c -> qtdLesoes; i++)
+            {
+                desalocaLesao(c -> lesoes[i]);
+            }
+            free(c -> lesoes);
+        }
+        free(c);
     }
-    free(c -> lesoes);
-    free(c);
 }

@@ -1,9 +1,46 @@
 ################################################
-DIGITE O CAMINHO DO BANCO DE DADOS: ################################################
-Caminho do banco de dados: Casos/3/../../
-Caminho da pasta de saida: Casos/3/saida
-######################## ACESSO MINI-SADE ######################
-DIGITE SEU LOGIN: DIGITE SUA SENHA: ###############################################################
+DIGITE O CAMINHO DO BANCO DE DADOS:
+################################################
+Caminho do banco de dados: Resultados/Gabriel/main/Casos/3
+Caminho da pasta de saida: ../../
+CAMINHO:Resultados/Gabriel/main/Casos/3/../../sistema.bin
+cucucucuu
+ARQUIVO PATH:Resultados/Gabriel/main/Casos/3
+NEEEOME:VAINE
+bbbbbbbbbAAAAAAAAAAAAbbbbbbbbbAAAAAAAAAAAACONSULTAS:2
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+NEEEOME:SYNDRA
+CONSULTAS:0
+NEEEOME:TAHM KENCH
+CONSULTAS:0
+NEEEOME:TWISTED FATE
+CONSULTAS:0
+NEEEOME:VARUS
+CONSULTAS:0
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+QTD PACIETNE:7
+PACIENTE[0]:VAINEPACIENTE[1]:TRYNDAMEREPACIENTE[2]:SYNDRAPACIENTE[3]:TAHM KENCHPACIENTE[4]:TWISTED FATEPACIENTE[5]:VARUSPACIENTE[6]:TRYNDAMERE######################## ACESSO MINI-SADE ######################DIGITE SEU LOGIN:
+DIGITE SUA SENHA:
+###############################################################
+LOGIN:heimer
+SENHA:science!
+I:0LOGIN:mundo
+SENHA:a4548
+I:1LOGIN:viktor
+SENHA:ed8989*
+I:2LOGIN:soraka
+SENHA:cura$
+NLOGIN:3ACESSO:MEDICO
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -12,10 +49,30 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E VAINE
+CUUUUUUUUUUUTRYNDAMERE E VAINE
+SYNDRA E VAINE
+TAHM KENCH E VAINE
+TWISTED FATE E VAINE
+VARUS E VAINE
+TRYNDAMERE E VAINE
+1 - VAINE (524.456.852-98)
 #################### BUSCAR PACIENTES #######################
-NOME DO PACIENTE: 
-NENHUM PACIENTE FOI ENCONTRADO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+ESCOLHA UMA OPCAO:
+	(1) ENVIAR LISTA PARA IMPRESSAO
+	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
+NAO EXISTE ESTA OPCAOQuantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -24,18 +81,33 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### BUSCAR PACIENTES #######################
-NOME DO PACIENTE: PACIENTES ENCONTRADOS:
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E VARUS
+TRYNDAMERE E VARUS
+SYNDRA E VARUS
+TAHM KENCH E VARUS
+TWISTED FATE E VARUS
+VARUS E VARUS
+CUUUUUUUUUUUTRYNDAMERE E VARUS
 1 - VARUS (555.333.270-46)
-
 #################### BUSCAR PACIENTES #######################
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR LISTA PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+#################### BUSCAR PACIENTES #######################
 LISTA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -44,18 +116,33 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### BUSCAR PACIENTES #######################
-NOME DO PACIENTE: PACIENTES ENCONTRADOS:
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E SYNDRA
+TRYNDAMERE E SYNDRA
+SYNDRA E SYNDRA
+CUUUUUUUUUUUTAHM KENCH E SYNDRA
+TWISTED FATE E SYNDRA
+VARUS E SYNDRA
+TRYNDAMERE E SYNDRA
 1 - SYNDRA (155.941.270-46)
-
 #################### BUSCAR PACIENTES #######################
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR LISTA PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+#################### BUSCAR PACIENTES #######################
 LISTA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -64,13 +151,36 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### CONSULTA MEDICA #######################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 4 selecionada: REALIZAR CONSULTA
+PACIENTEPACIENTEid:0
+id:0
+id:1
+id:1
+id:2
+id:2
+PACIENTE#################### CONSULTA MEDICA #######################
 CPF DO PACIENTE: ---
 -NOME: SYNDRA
--DATA DE NASCIMENTO: 6/4/1985
+-DATA DE NASCIMENTO: 06/04/1985
 ---
-DATA DA CONSULTA: POSSUI DIABETES: FUMANTE: ALERGIA A MEDICAMENTO: HISTORICO DE CANCER: TIPO DE PELE: 
-############################################################
+###############################################################
+DATA DA CONSULTA:
+POSSUI DIABETES:
+FUMANTE:
+ALERGIA A MEDICAMENTO:
+HISTORICO DE CANCER:
+TIPO DE PELE:
+PASSOU
+
+
+
+MEDICO MEIDCO MEIDCO MEIDOC:DR. MUNDO-0
+
+
 #################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
@@ -79,12 +189,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
-#################### CONSULTA MEDICA #######################
-CADASTRO DE LESAO:
-DIAGNOSTICO CLINICO: REGIAO DO CORPO: TAMANHO: ENVIAR PARA CIRURGIA: ENVIAR PARA CRIOTERAPIA: 
+Opcao escolhida: CADASTRAR LESAO
+DIAGNOSTICO CLINICO:
+Diagnóstico lido: MELANOMA
+REGIAO DO CORPO:
+Região lida: PEITORAL
+TAMANHO:
+Tamanho lido: 12
+ENVIAR PARA CIRURGIA:
+Enviar para cirurgia lido: 1
+ENVIAR PARA CRIOTERAPIA:
+Enviar para crioterapia lido: 0
 LESAO REGISTRADA COM SUCESSO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -92,12 +209,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
-#################### CONSULTA MEDICA #######################
-CADASTRO DE LESAO:
-DIAGNOSTICO CLINICO: REGIAO DO CORPO: TAMANHO: ENVIAR PARA CIRURGIA: ENVIAR PARA CRIOTERAPIA: 
+Opcao escolhida: CADASTRAR LESAO
+DIAGNOSTICO CLINICO:
+Diagnóstico lido: NEVO
+REGIAO DO CORPO:
+Região lida: COXA
+TAMANHO:
+Tamanho lido: 18
+ENVIAR PARA CIRURGIA:
+Enviar para cirurgia lido: 0
+ENVIAR PARA CRIOTERAPIA:
+Enviar para crioterapia lido: 1
 LESAO REGISTRADA COM SUCESSO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -105,12 +229,16 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: GERAR RECEITA MEDICA
+TIPO DE USO:
+DIGITE O NOME DO MEDICAMENTO:
+TIPO DO MEDICAMENTO:
+QUANTIDADE:
+INSTRUCOES DE USO:
 #################### CONSULTA MEDICA #######################
-RECEITA MEDICA:
-TIPO DE USO: NOME DO MEDICAMENTO: TIPO DE MEDICAMENTO: QUANTIDADE: INSTRUCOES DE USO: 
 RECEITA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -118,12 +246,16 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: GERAR RECEITA MEDICA
+TIPO DE USO:
+DIGITE O NOME DO MEDICAMENTO:
+TIPO DO MEDICAMENTO:
+QUANTIDADE:
+INSTRUCOES DE USO:
 #################### CONSULTA MEDICA #######################
-RECEITA MEDICA:
-TIPO DE USO: NOME DO MEDICAMENTO: TIPO DE MEDICAMENTO: QUANTIDADE: INSTRUCOES DE USO: 
 RECEITA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -131,10 +263,19 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: SOLICITACAO DE BIOPSIA
+PACIENTE: SYNDRA
+CPF: 155.941.270-46
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - MELANOMA - PEITORAL - 12MM
+
+SORAKA ESTRELA (CRM-2454)
+1/12/2023
 #################### CONSULTA MEDICA #######################
 SOLICITACAO DE BIOPSIA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -143,11 +284,11 @@ ESCOLHA UMA OPCAO:
 	(5) ENCERRAR CONSULTA
 ############################################################
 #################### CONSULTA MEDICA #######################
+Opcao escolhida: ENCAMINHAMENTO
 ENCAMINHAMENTO:
-ESPECIALIDADE ENCAMINHADA: MOTIVO: 
-ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+ESPECIALIDADE ENCAMINHADA: MOTIVO: ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
 ############################################################
-#################### CONSULTA MEDICA #######################
+A:0#################### CONSULTA MEDICA #######################
 ESCOLHA UMA OPCAO:
 	(1) CADASTRAR LESAO
 	(2) GERAR RECEITA MEDICA
@@ -155,6 +296,11 @@ ESCOLHA UMA OPCAO:
 	(4) ENCAMINHAMENTO
 	(5) ENCERRAR CONSULTA
 ############################################################
+Opcao escolhida: ENCERRAR CONSULTA
+A:1Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -163,25 +309,31 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
-#################### RELATORIO GERAL #######################
-NUMERO TOTAL DE PACIENTES ATENDIDOS: 2
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 6 selecionada: RELATORIO GERAL
+AAAAAAACIRUGRIACRIONUMERO TOTAL DE PACIENTES ATENDIDOS: 2
 IDADE MEDIA: 42
 DISTRIBUICAO POR GENERO:
 - FEMININO: 2
 - MASCULINO: 2
 - OUTROS: 3
-TAMANHO MEDIO DAS LESOES: 15
+TAMANHO MEDIO DAS LESOES: 7
 NUMERO TOTAL DE LESOES: 4
-NUMERO TOTAL DE CIRURGIAS: 3
+NUMERO TOTAL DE CIRURGIAS: 1
 NUMERO TOTAL DE CRIOTERAPIA: 1
-
 ESCOLHA UMA OPCAO:
 	(1) ENVIAR PARA IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-
+OPCAO:1
 RELATÓRIO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
-############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -190,17 +342,18 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 7 selecionada: FILA DE IMPRESSAO
 ################ FILA DE IMPRESSAO MEDICA ##################
 ESCOLHA UMA OPCAO:
 	(1) EXECUTAR FILA DE IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
-################ FILA DE IMPRESSAO MEDICA ##################
-EXECUTANDO FILA DE IMPRESSAO:
 1 - VARUS (555.333.270-46)
-
 1 - SYNDRA (155.941.270-46)
-
 RECEITUARIO
 NOME: SYNDRA
 
@@ -235,14 +388,13 @@ L1 - MELANOMA - PEITORAL - 12MM
 
 SORAKA ESTRELA (CRM-2454)
 1/12/2023
-
 PACIENTE: SYNDRA
 CPF: 155.941.270-46
 
 ESPECIALIDADE ENCAMINHADA: CARDIOLOGIA/ANESTESISTA
 MOTIVO: AVALIACAO DE RISCO CIRURGICO
 
-SORAKA ESTRELA (CRM-2454)
+SORAKA ESTRELA(CRM-2454)
 1/12/2023
 
 NUMERO TOTAL DE PACIENTES ATENDIDOS: 2
@@ -251,19 +403,20 @@ DISTRIBUICAO POR GENERO:
 - FEMININO: 2
 - MASCULINO: 2
 - OUTROS: 3
-TAMANHO MEDIO DAS LESOES: 15
+TAMANHO MEDIO DAS LESOES: 7
 NUMERO TOTAL DE LESOES: 4
-NUMERO TOTAL DE CIRURGIAS: 3
+NUMERO TOTAL DE CIRURGIAS: 1
 NUMERO TOTAL DE CRIOTERAPIA: 1
-
-
 PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU ANTERIOR
-############################################################
 ################ FILA DE IMPRESSAO MEDICA ##################
 ESCOLHA UMA OPCAO:
 	(1) EXECUTAR FILA DE IMPRESSAO
 	(2) RETORNAR AO MENU PRINCIPAL
 ############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
 ####################### MENU PRINCIPAL #########################
 ESCOLHA UMA OPCAO:
 	(4) REALIZAR CONSULTA
@@ -272,3 +425,64 @@ ESCOLHA UMA OPCAO:
 	(7) FILA DE IMPRESSAO
 	(8) FINALIZAR O PROGRAMA
 ###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 8 selecionada: FINALIZAR O PROGRAMA
+PATH:Resultados/Gabriel/main/Casos/3
+PATH:Resultados/Gabriel/main/Casos/3/saida1 - VARUS (555.333.270-46)
+1 - SYNDRA (155.941.270-46)
+RECEITUARIO
+NOME: SYNDRA
+
+USO TOPICO
+
+BEPANTOL DERM
+4 POMADA
+
+USAR 4X AOS DIA
+
+SORAKA ESTRELA (CRM-2454)
+1/12/2023
+
+RECEITUARIO
+NOME: SYNDRA
+
+USO TOPICO
+
+EFURIX
+10 POMADA
+
+USAR 1X AO DIA ANTES DE DORMIR
+
+SORAKA ESTRELA (CRM-2454)
+1/12/2023
+
+PACIENTE: SYNDRA
+CPF: 155.941.270-46
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - MELANOMA - PEITORAL - 12MM
+
+SORAKA ESTRELA (CRM-2454)
+1/12/2023
+PACIENTE: SYNDRA
+CPF: 155.941.270-46
+
+ESPECIALIDADE ENCAMINHADA: CARDIOLOGIA/ANESTESISTA
+MOTIVO: AVALIACAO DE RISCO CIRURGICO
+
+SORAKA ESTRELA(CRM-2454)
+1/12/2023
+
+NUMERO TOTAL DE PACIENTES ATENDIDOS: 2
+IDADE MEDIA: 42
+DISTRIBUICAO POR GENERO:
+- FEMININO: 2
+- MASCULINO: 2
+- OUTROS: 3
+TAMANHO MEDIO DAS LESOES: 7
+NUMERO TOTAL DE LESOES: 4
+NUMERO TOTAL DE CIRURGIAS: 1
+NUMERO TOTAL DE CRIOTERAPIA: 1

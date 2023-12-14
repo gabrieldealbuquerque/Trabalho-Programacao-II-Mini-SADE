@@ -9,32 +9,34 @@ typedef struct tLesao tLesao;
 
 tLesao* criaLesao();
 
-void lerLesao();
+void lerLesao(tLesao* l);
 
 void printLesao();
 
-void escreveBinLesao();
+void escreveBinLesao(tLesao* l, FILE* arquivo);
 
-void lerBinLesao();
+void lerBinLesao(tLesao* l, FILE* arquivo);
 
-char* obtemRotuloLesao();
+char* obtemRotuloLesao(tLesao* l);
 
-void defineRotuloLesao();
+void defineRotuloLesao(tLesao* l, const char* rotulo);
 
-int obtemIdLesao();
+tLesao* copiaLesao(tLesao* a);
 
-void defineIdLesao();
+int obtemIdLesao(tLesao* l);
 
-char* obtemDiagnosticoLesao();
+void defineIdLesao(tLesao* l, int id);
 
-char* obtemRegiaoLesao();
+char* obtemDiagnosticoLesao(tLesao* l);
 
-int obtemTamanhoLesao();
+char* obtemRegiaoLesao(tLesao* l);
 
-bool obtemCirurgiaLesao();
+int obtemTamanhoLesao(tLesao* l);
 
-bool obtemCrioterapiaLesao();
+bool obtemCirurgiaLesao(tLesao* l);
 
-void desalocaLesao();
+bool obtemCrioterapiaLesao(tLesao* l);
+
+void desalocaLesao(tLesao* l);
 
 #endif

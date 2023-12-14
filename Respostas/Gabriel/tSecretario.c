@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "tPessoa.h"
 #include "tLogin.h"
 #include "tSecretario.h"
 
@@ -11,6 +10,12 @@ struct tSecretario{
 	int idLogin;
 	int id;
 };
+
+tSecretario* criaSecretarioLeitura()
+{
+	tSecretario* secretario = (tSecretario*) calloc (1, sizeof(tSecretario));
+	return secretario;
+}
 
 tSecretario* criaSecretario()
 {
@@ -27,6 +32,12 @@ void lerSecretario(tSecretario* s)
 	leLogin(s -> login);
 	printf("NIVEL DE ACESSO:\n");
 	AtribuiTipoAcesso(s -> login, 1);
+
+}
+
+size_t tamanhoSecretario(tSecretario* m)
+{
+    return sizeof(*m);
 }
 
 void defineIdSecretario(tSecretario* s, int id)
@@ -45,14 +56,23 @@ void printSecretario(tSecretario* s)
 	
 }
 
-void escreveBinSecretario()
-{
-
+void salvar_secretario_em_binario(tSecretario* secretario, FILE* arquivo) {
+    fwrite(secretario, sizeof(tSecretario), 1, arquivo);
+    escreveBinPessoa(secretario->dadosSecretario, arquivo);
+    salvar_login_em_binario(secretario->login, arquivo);
 }
 
-void lerBinSecretario()
-{
+// Função para ler um secretário de binário
+void ler_secretario_de_binario(tSecretario* secretario, FILE* arquivo) {
+    fread(secretario, sizeof(tSecretario), 1, arquivo);
+    secretario -> dadosSecretario = lerBinPessoa(arquivo);
+    secretario->login = criaLogin();
+    ler_login_de_binario(secretario->login, arquivo);
+}
 
+int calculaidadeSecretario(tSecretario* secretario)
+{
+    return calculaIdadePessoa(secretario -> dadosSecretario);
 }
 
 char* retornaLoginSecretario(void* secre)
@@ -79,12 +99,28 @@ char* obtemCPFSecretario(void* secre)
 	return obtemCPFPessoa(secretario -> dadosSecretario);	
 }
 
+char* obtemNomeSecretario(void* secre)
+{
+	tSecretario* secretario = (tSecretario*) secre;
+	return obtemNomePessoa(secretario -> dadosSecretario);	
+}
+
 void adicionaSecretarioSade(void** s, void* adicionar, int qtdSecretarios)
 {
     tSecretario** secretarios = (tSecretario**) s;
     tSecretario* secretarioAdd = (tSecretario*) adicionar;
     secretarios = (tSecretario**) realloc(secretarios, sizeof(tSecretario*) * (qtdSecretarios));
     secretarios[qtdSecretarios - 1] = secretarioAdd;
+}
+
+int obtemGeneroSecretario(tSecretario* secretario)
+{
+	return comparaGeneroPessoa(secretario -> dadosSecretario);
+}
+
+tPessoa* retornaPessoa(tSecretario* secretario)
+{
+	return secretario -> dadosSecretario;
 }
 
 void desalocaSecretario(void* sec)

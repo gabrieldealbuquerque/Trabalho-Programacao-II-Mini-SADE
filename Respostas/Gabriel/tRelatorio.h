@@ -13,8 +13,18 @@ void desalocaRelatorioGenerico(void*);
 
 void desalocaRelatorio(tRelatorio*);
 
-void imprimeNaTelaRelatorio(tRelatorio*);
+void imprimeNaTelaRelatorio(void* r);
 
-void imprimeEmArquivoRelatorio(tRelatorio*);
+void imprimeEmArquivoRelatorio(void* r, char* path);
+
+int obtemPelomenosum(tRelatorio *relatorio);
+int obtemMediaIdade(tRelatorio *relatorio);
+int obtemQtdFeminino(tRelatorio *relatorio);
+int obtemQtdMasculino(tRelatorio *relatorio);
+int obtemQtdOUTROS(tRelatorio *relatorio);
+int obtemTamanhoMedioLesoes(tRelatorio *relatorio);
+int obtemNLesoes(tRelatorio *relatorio);
+int obtemNCirurgias(tRelatorio *relatorio);
+int obtemNCrioterapias(tRelatorio *relatorio);
 
 #endif

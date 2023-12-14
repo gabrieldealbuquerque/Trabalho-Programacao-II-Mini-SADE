@@ -14,7 +14,7 @@ tDocumento *criaDocumento(void *dado, func_ptr_imprimeNaTela imprimeNaTela,
                           func_ptr_imprimeEmArquivo imprimeEmArquivo,
                           func_ptr_desaloca desaloca)
 {
-    tDocumento *novoDocumento = (tDocumento *)malloc(sizeof(tDocumento));
+    tDocumento *novoDocumento = (tDocumento *)calloc(1, sizeof(tDocumento));
     if (novoDocumento == NULL)
     {
         printf("Falha de alocacao de memoria no criaDocumento\n");

@@ -3,6 +3,7 @@
         "tpessoa.h": "c",
         "tmedico.h": "c",
         "tsecretario.h": "c",
-        "tlogin.h": "c"
+        "tlogin.h": "c",
+        "tlista_busca.h": "c"
     }
 }

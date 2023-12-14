@@ -1,1 +1,568 @@
-valgrind: Resultados/Gabriel/completo/prog: No such file or directory
+################################################
+DIGITE O CAMINHO DO BANCO DE DADOS:
+################################################
+Caminho do banco de dados: Resultados/Gabriel/completo/Casos/4
+Caminho da pasta de saida: ../../
+CAMINHO:Resultados/Gabriel/completo/Casos/4/../../sistema.bin
+cucucucuu
+ARQUIVO PATH:Resultados/Gabriel/completo/Casos/4
+NEEEOME:VAINE
+bbbbbbbbbAAAAAAAAAAAAbbbbbbbbbAAAAAAAAAAAACONSULTAS:2
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+NEEEOME:SYNDRA
+CONSULTAS:0
+NEEEOME:TAHM KENCH
+CONSULTAS:0
+NEEEOME:TWISTED FATE
+CONSULTAS:0
+NEEEOME:VARUS
+CONSULTAS:0
+NEEEOME:TRYNDAMERE
+CONSULTAS:0
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+QTD PACIETNE:7
+PACIENTE[0]:VAINEPACIENTE[1]:TRYNDAMEREPACIENTE[2]:SYNDRAPACIENTE[3]:TAHM KENCHPACIENTE[4]:TWISTED FATEPACIENTE[5]:VARUSPACIENTE[6]:TRYNDAMERE######################## ACESSO MINI-SADE ######################DIGITE SEU LOGIN:
+DIGITE SUA SENHA:
+###############################################################
+LOGIN:heimer
+SENHA:science!
+I:0LOGIN:mundo
+SENHA:a4548
+I:1LOGIN:viktor
+SENHA:ed8989*
+I:2LOGIN:soraka
+SENHA:cura$
+I:3NLOGIN:-1Login errado ai maluco
+######################## ACESSO MINI-SADE ######################DIGITE SEU LOGIN:
+DIGITE SUA SENHA:
+###############################################################
+LOGIN:heimer
+SENHA:science!
+I:0LOGIN:mundo
+SENHA:a4548
+NLOGIN:1ACESSO:MEDICO
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E TRYNDA
+TRYNDAMERE E TRYNDA
+SYNDRA E TRYNDA
+TAHM KENCH E TRYNDA
+TWISTED FATE E TRYNDA
+VARUS E TRYNDA
+TRYNDAMERE E TRYNDA
+#################### BUSCAR PACIENTES #######################
+NENHUM PACIENTE FOI ENCONTRADO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E TRYNDA
+TRYNDAMERE E TRYNDA
+SYNDRA E TRYNDA
+TAHM KENCH E TRYNDA
+TWISTED FATE E TRYNDA
+VARUS E TRYNDA
+TRYNDAMERE E TRYNDA
+#################### BUSCAR PACIENTES #######################
+NENHUM PACIENTE FOI ENCONTRADO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 5 selecionada: BUSCAR PACIENTES
+NOME DO PACIENTE:
+PACIENTES ENCONTRADOS: 
+VAINE E TRYNDAMERE
+TRYNDAMERE E TRYNDAMERE
+CUUUUUUUUUUUSYNDRA E TRYNDAMERE
+TAHM KENCH E TRYNDAMERE
+TWISTED FATE E TRYNDAMERE
+VARUS E TRYNDAMERE
+TRYNDAMERE E TRYNDAMERE
+CUUUUUUUUUUU1 - TRYNDAMERE (200.171.256-10)
+2 - TRYNDAMERE (955.141.970-96)
+#################### BUSCAR PACIENTES #######################
+ESCOLHA UMA OPCAO:
+	(1) ENVIAR LISTA PARA IMPRESSAO
+	(2) RETORNAR AO MENU PRINCIPAL
+############################################################
+#################### BUSCAR PACIENTES #######################
+LISTA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU PRINCIPAL
+############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 6 selecionada: RELATORIO GERAL
+AAAAAAANUMERO TOTAL DE PACIENTES ATENDIDOS: 1
+IDADE MEDIA: 42
+DISTRIBUICAO POR GENERO:
+- FEMININO: 2
+- MASCULINO: 2
+- OUTROS: 3
+TAMANHO MEDIO DAS LESOES: 0
+NUMERO TOTAL DE LESOES: 2
+NUMERO TOTAL DE CIRURGIAS: 0
+NUMERO TOTAL DE CRIOTERAPIA: 0
+ESCOLHA UMA OPCAO:
+	(1) ENVIAR PARA IMPRESSAO
+	(2) RETORNAR AO MENU PRINCIPAL
+############################################################
+OPCAO:1
+RELATÓRIO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 4 selecionada: REALIZAR CONSULTA
+PACIENTEPACIENTEid:0
+id:0
+id:1
+id:1
+id:2
+id:2
+id:3
+id:3
+id:4
+id:4
+id:5
+id:5
+id:6
+id:6
+PACIENTE#################### CONSULTA MEDICA #######################
+CPF DO PACIENTE: ---
+-NOME: TRYNDAMERE
+-DATA DE NASCIMENTO: 12/12/1980
+---
+###############################################################
+DATA DA CONSULTA:
+POSSUI DIABETES:
+FUMANTE:
+ALERGIA A MEDICAMENTO:
+HISTORICO DE CANCER:
+TIPO DE PELE:
+PASSOU
+
+
+
+MEDICO MEIDCO MEIDCO MEIDOC:DR. MUNDO-0
+
+
+#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao invalida. Tente novamente.
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: CADASTRAR LESAO
+DIAGNOSTICO CLINICO:
+Diagnóstico lido: CARCINOMA ESPINOCELULAR
+REGIAO DO CORPO:
+Região lida: PERNA
+TAMANHO:
+Tamanho lido: 20
+ENVIAR PARA CIRURGIA:
+Enviar para cirurgia lido: 1
+ENVIAR PARA CRIOTERAPIA:
+Enviar para crioterapia lido: 0
+LESAO REGISTRADA COM SUCESSO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: CADASTRAR LESAO
+DIAGNOSTICO CLINICO:
+Diagnóstico lido: CERATOSE ACTNICA
+REGIAO DO CORPO:
+Região lida: FACE
+TAMANHO:
+Tamanho lido: 15
+ENVIAR PARA CIRURGIA:
+Enviar para cirurgia lido: 0
+ENVIAR PARA CRIOTERAPIA:
+Enviar para crioterapia lido: 1
+LESAO REGISTRADA COM SUCESSO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: SOLICITACAO DE BIOPSIA
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CARCINOMA ESPINOCELULAR - PERNA - 20MM
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+#################### CONSULTA MEDICA #######################
+SOLICITACAO DE BIOPSIA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: SOLICITACAO DE BIOPSIA
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CARCINOMA ESPINOCELULAR - PERNA - 20MM
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+#################### CONSULTA MEDICA #######################
+SOLICITACAO DE BIOPSIA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: GERAR RECEITA MEDICA
+TIPO DE USO:
+DIGITE O NOME DO MEDICAMENTO:
+TIPO DO MEDICAMENTO:
+QUANTIDADE:
+INSTRUCOES DE USO:
+#################### CONSULTA MEDICA #######################
+RECEITA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: GERAR RECEITA MEDICA
+TIPO DE USO:
+DIGITE O NOME DO MEDICAMENTO:
+TIPO DO MEDICAMENTO:
+QUANTIDADE:
+INSTRUCOES DE USO:
+#################### CONSULTA MEDICA #######################
+RECEITA ENVIADA PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+#################### CONSULTA MEDICA #######################
+Opcao escolhida: ENCAMINHAMENTO
+ENCAMINHAMENTO:
+ESPECIALIDADE ENCAMINHADA: MOTIVO: ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+#################### CONSULTA MEDICA #######################
+Opcao escolhida: ENCAMINHAMENTO
+ENCAMINHAMENTO:
+ESPECIALIDADE ENCAMINHADA: MOTIVO: ENCAMINHAMENTO ENVIADO PARA FILA DE IMPRESSAO. PRESSIONE QUALQUER TECLA PARA RETORNAR AO MENU ANTERIOR
+############################################################
+A:0#################### CONSULTA MEDICA #######################
+ESCOLHA UMA OPCAO:
+	(1) CADASTRAR LESAO
+	(2) GERAR RECEITA MEDICA
+	(3) SOLICITACAO DE BIOPSIA
+	(4) ENCAMINHAMENTO
+	(5) ENCERRAR CONSULTA
+############################################################
+Opcao escolhida: ENCERRAR CONSULTA
+A:1Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 7 selecionada: FILA DE IMPRESSAO
+################ FILA DE IMPRESSAO MEDICA ##################
+ESCOLHA UMA OPCAO:
+	(1) EXECUTAR FILA DE IMPRESSAO
+	(2) RETORNAR AO MENU PRINCIPAL
+############################################################
+1 - TRYNDAMERE (200.171.256-10)
+2 - TRYNDAMERE (955.141.970-96)
+NUMERO TOTAL DE PACIENTES ATENDIDOS: 1
+IDADE MEDIA: 42
+DISTRIBUICAO POR GENERO:
+- FEMININO: 2
+- MASCULINO: 2
+- OUTROS: 3
+TAMANHO MEDIO DAS LESOES: 0
+NUMERO TOTAL DE LESOES: 2
+NUMERO TOTAL DE CIRURGIAS: 0
+NUMERO TOTAL DE CRIOTERAPIA: 0
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CARCINOMA ESPINOCELULAR - PERNA - 20MM
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CARCINOMA ESPINOCELULAR - PERNA - 20MM
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+RECEITUARIO
+NOME: TRYNDAMERE
+
+USO TOPICO
+
+NEBACETIM
+2 POMADA
+
+USAR TODOS OS DIAS ANTES DE DORMIR
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+CAMINHO:Resultados/Gabriel/completo/Casos/4/receita.txtRECEITUARIO
+NOME: TRYNDAMERE
+
+USO ORAL
+
+PARACETAMOL 250MG
+12 COMPRIMIDO
+
+USAR APOS A CIRURGIA EM CASO DE DOR
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+CAMINHO:Resultados/Gabriel/completo/Casos/4/receita.txtPACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+ESPECIALIDADE ENCAMINHADA: ORTOPEDIA
+MOTIVO: PACIENTE APRESENTA DESPROPORCIONALIDADE NOS BRACOS. NECESSARIO RAIO X.
+
+DR. MUNDO(CRM-01234)
+20/10/2022
+
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+ESPECIALIDADE ENCAMINHADA: CARDIOLOGIA
+MOTIVO: AVALIACAO CARDIOLOGICA ANTES DA CIRURGIA
+
+DR. MUNDO(CRM-01234)
+20/10/2022
+
+PRESSIONE QUALQUER TECLA PARA VOLTAR PARA O MENU ANTERIOR
+################ FILA DE IMPRESSAO MEDICA ##################
+ESCOLHA UMA OPCAO:
+	(1) EXECUTAR FILA DE IMPRESSAO
+	(2) RETORNAR AO MENU PRINCIPAL
+############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+####################### MENU PRINCIPAL #########################
+ESCOLHA UMA OPCAO:
+	(4) REALIZAR CONSULTA
+	(5) BUSCAR PACIENTES
+	(6) RELATORIO GERAL
+	(7) FILA DE IMPRESSAO
+	(8) FINALIZAR O PROGRAMA
+###############################################################
+Quantidade de medicos:2
+Quantidade de secretarios:2
+Quantidade de pacientes:7
+Quantidade de logins:4
+Opcao 8 selecionada: FINALIZAR O PROGRAMA
+PATH:Resultados/Gabriel/completo/Casos/4
+PATH:Resultados/Gabriel/completo/Casos/4/saida1 - TRYNDAMERE (200.171.256-10)
+2 - TRYNDAMERE (955.141.970-96)
+NUMERO TOTAL DE PACIENTES ATENDIDOS: 1
+IDADE MEDIA: 42
+DISTRIBUICAO POR GENERO:
+- FEMININO: 2
+- MASCULINO: 2
+- OUTROS: 3
+TAMANHO MEDIO DAS LESOES: 0
+NUMERO TOTAL DE LESOES: 2
+NUMERO TOTAL DE CIRURGIAS: 0
+NUMERO TOTAL DE CRIOTERAPIA: 0
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CARCINOMA ESPINOCELULAR - PERNA - 20MM
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+SOLICITACAO DE BIOPSIA PARA AS LESOES:
+L1 - CARCINOMA ESPINOCELULAR - PERNA - 20MM
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+RECEITUARIO
+NOME: TRYNDAMERE
+
+USO TOPICO
+
+NEBACETIM
+2 POMADA
+
+USAR TODOS OS DIAS ANTES DE DORMIR
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+CAMINHO:Resultados/Gabriel/completo/Casos/4/saida/receita.txtRECEITUARIO
+NOME: TRYNDAMERE
+
+USO ORAL
+
+PARACETAMOL 250MG
+12 COMPRIMIDO
+
+USAR APOS A CIRURGIA EM CASO DE DOR
+
+DR. MUNDO (CRM-01234)
+20/10/2022
+CAMINHO:Resultados/Gabriel/completo/Casos/4/saida/receita.txtPACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+ESPECIALIDADE ENCAMINHADA: ORTOPEDIA
+MOTIVO: PACIENTE APRESENTA DESPROPORCIONALIDADE NOS BRACOS. NECESSARIO RAIO X.
+
+DR. MUNDO(CRM-01234)
+20/10/2022
+
+PACIENTE: TRYNDAMERE
+CPF: 955.141.970-96
+
+ESPECIALIDADE ENCAMINHADA: CARDIOLOGIA
+MOTIVO: AVALIACAO CARDIOLOGICA ANTES DA CIRURGIA
+
+DR. MUNDO(CRM-01234)
+20/10/2022
+

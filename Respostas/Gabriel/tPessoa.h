@@ -9,14 +9,16 @@ tPessoa* criaPessoa();
 void lerPessoa(tPessoa* p);
 void printPessoa(tPessoa* p);
 void printNomeDataNascPessoa();
-void escreveBinPessoa();
-void lerBinPessoa();
+void escreveBinPessoa(tPessoa *pessoa, FILE *arquivo);
 bool comparaCPFPessoa(tPessoa* p, const char* cpf);
 char* obtemCPFPessoa(tPessoa* p);
 char* obtemNomePessoa(tPessoa* p);
 char* obtemDataPessoa(tPessoa* p);
 int calculaIdadePessoa(tPessoa* p);
-bool comparaGeneroPessoa(tPessoa* p, const char* genero);
+int comparaGeneroPessoa(tPessoa* p);
 void desalocaPessoa(tPessoa* p);
+void escreveBinPessoa(tPessoa *pessoa, FILE *arquivo);
+tPessoa* lerBinPessoa(FILE *arquivo);
+void atribuiNome(tPessoa* pessoa, const char* nome);
 
 #endif

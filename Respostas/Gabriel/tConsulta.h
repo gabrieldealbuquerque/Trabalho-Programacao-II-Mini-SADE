@@ -12,13 +12,15 @@ tConsulta* criaConsulta();
 
 void ConsultaSemMedico(tConsulta* consulta);
 
+void atribuiMedicoConsulta(tConsulta* consulta, tMedico* medico);
+
 void leConsulta(tConsulta* c);
 
 void printConsulta(tConsulta* c);
 
-void escreveBinConsulta(tConsulta* c);
+void ler_consulta_de_binario(tConsulta* consulta, FILE* arquivo);
 
-void lerBinConsulta(tConsulta* c);
+void salvar_consulta_em_binario(tConsulta* consulta, FILE* arquivo);
 
 void adicionarLesaoConsulta(tConsulta* c);
 
@@ -36,7 +38,7 @@ char* obtemDataConsulta(tConsulta* c);
 
 void tratarReceita(char* nomePaciente, tConsulta*c, void* m);
 
-void tratarBiopsia(tConsulta* consulta, char* nome, char* cpf);
+int tratarBiopsia(tConsulta* consulta, char* nome, char* cpf);
 
 void tratarEncaminhamento(tConsulta* consulta, char* nome, char* cpf);
 
@@ -44,7 +46,9 @@ void defineMedicoConsulta(tConsulta* c, void* m);
 
 tReceita* retornaReceita(tConsulta* c);
 
-tBiopsia** retornaBiopsia(tConsulta* c);
+tBiopsia* retornaBiopsia(tConsulta* c);
+
+tLesao** retornaLesoes(tConsulta* l);
 
 tEncaminhamento* retornaEncaminhamento(tConsulta* c);
 

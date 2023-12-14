@@ -1,0 +1,332 @@
+==450226== Memcheck, a memory error detector
+==450226== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==450226== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==450226== Command: Resultados/Gabriel/completo/prog Resultados/Gabriel/completo/Casos/3
+==450226== Parent PID: 450225
+==450226== 
+==450226== Invalid read of size 8
+==450226==    at 0x10BF4B: obtemNomeMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A5BA: tratarBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x1100CF: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91d50 is 0 bytes inside a block of size 40 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C1D7: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10BD90: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE64: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10954A: atribuiValoresBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A5EA: tratarBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x1100CF: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91dc0 is 0 bytes inside a block of size 180 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10C1AE: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10BD9E: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE82: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10954A: atribuiValoresBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A5EA: tratarBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x1100CF: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91dc1 is 1 bytes inside a block of size 180 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10C1AE: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10BD9E: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE64: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x109560: atribuiValoresBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A5EA: tratarBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x1100CF: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91d68 is 24 bytes inside a block of size 40 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C1D7: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10BD90: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE82: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x109560: atribuiValoresBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A5EA: tratarBiopsia (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x1100CF: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91d69 is 25 bytes inside a block of size 40 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C1D7: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10BD90: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 8
+==450226==    at 0x10BF4B: obtemNomeMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A66F: tratarEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110206: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91d50 is 0 bytes inside a block of size 40 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C1D7: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10BD90: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE64: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10AA99: criaEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A688: tratarEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110206: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91dc0 is 0 bytes inside a block of size 180 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10C1AE: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10BD9E: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE82: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10AA99: criaEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A688: tratarEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110206: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91dc1 is 1 bytes inside a block of size 180 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10C1AE: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10BD9E: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE64: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10AAB3: criaEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A688: tratarEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110206: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91d68 is 24 bytes inside a block of size 40 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C1D7: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10BD90: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 1
+==450226==    at 0x484EE82: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10AAB3: criaEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10A688: tratarEncaminhamento (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110206: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91d69 is 25 bytes inside a block of size 40 free'd
+==450226==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10C1D7: desalocaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FE7A: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Block was alloc'd at
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x10BD90: criaMedicoVazio (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10FDA6: TrataOpcaoConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F576: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== Invalid read of size 8
+==450226==    at 0x110635: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91cd0 is 32 bytes before a block of size 32 in arena "client"
+==450226== 
+==450226== Invalid read of size 8
+==450226==    at 0x11067A: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0x4a91cd0 is 32 bytes before a block of size 32 in arena "client"
+==450226== 
+==450226== Invalid read of size 4
+==450226==    at 0x10B698: obtemTamanhoLesao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110684: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  Address 0xb4 is not stack'd, malloc'd or (recently) free'd
+==450226== 
+==450226== 
+==450226== Process terminating with default action of signal 11 (SIGSEGV)
+==450226==  Access not within mapped region at address 0xB4
+==450226==    at 0x10B698: obtemTamanhoLesao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x110684: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==  If you believe this happened as a result of a stack
+==450226==  overflow in your program's main thread (unlikely but
+==450226==  possible), you can try to increase the size of the
+==450226==  main thread stack using the --main-stacksize= flag.
+==450226==  The main thread stack size used in this run was 8388608.
+==450226== 
+==450226== HEAP SUMMARY:
+==450226==     in use at exit: 18,746 bytes in 72 blocks
+==450226==   total heap usage: 87 allocs, 15 frees, 24,786 bytes allocated
+==450226== 
+==450226== 48 (16 direct, 32 indirect) bytes in 1 blocks are definitely lost in loss record 16 of 40
+==450226==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==450226==    by 0x110B60: criaListaBusca (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F848: adicionaResultadoBusca (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10F6A5: executaBusca (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10EFC3: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==450226== 
+==450226== LEAK SUMMARY:
+==450226==    definitely lost: 16 bytes in 1 blocks
+==450226==    indirectly lost: 32 bytes in 2 blocks
+==450226==      possibly lost: 0 bytes in 0 blocks
+==450226==    still reachable: 18,698 bytes in 69 blocks
+==450226==         suppressed: 0 bytes in 0 blocks
+==450226== Reachable blocks (those to which a pointer was found) are not shown.
+==450226== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==450226== 
+==450226== For lists of detected and suppressed errors, rerun with: -s
+==450226== ERROR SUMMARY: 54 errors from 14 contexts (suppressed: 0 from 0)

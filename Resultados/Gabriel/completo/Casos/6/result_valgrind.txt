@@ -1,0 +1,91 @@
+==455036== Memcheck, a memory error detector
+==455036== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==455036== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==455036== Command: Resultados/Gabriel/completo/prog Resultados/Gabriel/completo/Casos/6
+==455036== Parent PID: 455035
+==455036== 
+==455036== Invalid read of size 8
+==455036==    at 0x110635: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==  Address 0x4a91cd0 is 16 bytes before a block of size 104 alloc'd
+==455036==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==455036==    by 0x109CC1: criaConsulta (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10F31B: executaConsultaMedica (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10EFA0: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036== 
+==455036== Invalid read of size 8
+==455036==    at 0x11067A: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==  Address 0x4a91610 is 0 bytes inside a block of size 180 free'd
+==455036==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==455036==    by 0x10CC73: desalocaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10DAFB: desalocaSecretario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E977: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==  Block was alloc'd at
+==455036==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==455036==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10D77B: criaSecretario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E8C1: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036== 
+==455036== Invalid read of size 4
+==455036==    at 0x10B698: obtemTamanhoLesao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x110684: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==  Address 0x4120524f544b49aa is not stack'd, malloc'd or (recently) free'd
+==455036== 
+==455036== 
+==455036== Process terminating with default action of signal 11 (SIGSEGV)
+==455036==  General Protection Fault
+==455036==    at 0x10B698: obtemTamanhoLesao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x110684: executaRelatorioGeral (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10F004: TrataOpcao (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10E04F: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036== 
+==455036== HEAP SUMMARY:
+==455036==     in use at exit: 19,977 bytes in 79 blocks
+==455036==   total heap usage: 96 allocs, 17 frees, 26,031 bytes allocated
+==455036== 
+==455036== 180 bytes in 1 blocks are definitely lost in loss record 27 of 45
+==455036==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==455036==    by 0x10C7A2: criaPessoa (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10BCA9: criaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109FF9: ler_consulta_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10C56A: ler_paciente_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x1114D2: ler_sistema_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10DD7A: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036== 
+==455036== 216 bytes in 1 blocks are definitely lost in loss record 30 of 45
+==455036==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==455036==    by 0x10B763: criaLogin (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10BCBA: criaMedico (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109FF9: ler_consulta_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10C56A: ler_paciente_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x1114D2: ler_sistema_de_binario (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x10DD7A: Sistema (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036==    by 0x109493: main (in /mnt/c/Users/gabri/Desktop/Programação 2/trabalho2/Resultados/Gabriel/completo/prog)
+==455036== 
+==455036== LEAK SUMMARY:
+==455036==    definitely lost: 396 bytes in 2 blocks
+==455036==    indirectly lost: 0 bytes in 0 blocks
+==455036==      possibly lost: 0 bytes in 0 blocks
+==455036==    still reachable: 19,581 bytes in 77 blocks
+==455036==         suppressed: 0 bytes in 0 blocks
+==455036== Reachable blocks (those to which a pointer was found) are not shown.
+==455036== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==455036== 
+==455036== For lists of detected and suppressed errors, rerun with: -s
+==455036== ERROR SUMMARY: 7 errors from 5 contexts (suppressed: 0 from 0)

@@ -3,37 +3,55 @@
 
 typedef struct tConsulta tConsulta;
 
-/**
- * Funções de callback que serão utilizadas para imprimir o documento na tela,
- * em arquivo e desalocar o dado genérico, respectivamente.
- */
-typedef void (*func_ptr_imprimeNaTela)(void *dado);
-typedef void (*func_ptr_imprimeEmArquivo)(void *dado, char *path);
-typedef void (*func_ptr_desaloca)(void *dado);
+#include "tReceita.h"
+#include "tBiopsia.h"
+#include "tMedico.h"
+#include "tEncaminhamento.h"
 
-/**
- * Função que recebe um dado genérico (representando um tipo de documento) e suas funções de callback.
- * A função cria um Documento e retorna um ponteiro para ele.
- */
-tDocumento *criaDocumento(void *dado, func_ptr_imprimeNaTela imprimeNaTela,
-                          func_ptr_imprimeEmArquivo ImprimeEmArquivo,
-                          func_ptr_desaloca desaloca);
+tConsulta* criaConsulta();
 
-/**
- * Função que recebe um Documento e o desaloca. O dado genérico também deve ser desalocado
- * dentro dessa função.
- */
-void desalocaDocumento(tDocumento *doc);
+void ConsultaSemMedico(tConsulta* consulta);
 
-/**
- * Função que recebe um Documento genérico e o imprime na tela.
- */
-void imprimeNaTelaDocumento(tDocumento *doc);
+void atribuiMedicoConsulta(tConsulta* consulta, tMedico* medico);
 
-/**
- * Função que recebe um Documento genérico e o imprime em um arquivo.
- * O path representa o caminho até o diretório onde o arquivo será criado ou editado.
- */
-void imprimeEmArquivoDocumento(tDocumento *doc, char *path);
+void leConsulta(tConsulta* c);
+
+void printConsulta(tConsulta* c);
+
+void ler_consulta_de_binario(tConsulta* consulta, FILE* arquivo);
+
+void salvar_consulta_em_binario(tConsulta* consulta, FILE* arquivo);
+
+void adicionarLesaoConsulta(tConsulta* c);
+
+int obtemIdConsulta(tConsulta* c);
+
+tMedico* retornaMedico(tConsulta* c);
+
+void defineIdConsulta(tConsulta* c, int id);
+
+int obtemQtdAtualLesaoConsulta(tConsulta* c);
+
+//int obtemIdLesoesConsulta(tConsulta* c);
+
+char* obtemDataConsulta(tConsulta* c);
+
+void tratarReceita(char* nomePaciente, tConsulta*c, void* m);
+
+int tratarBiopsia(tConsulta* consulta, char* nome, char* cpf);
+
+void tratarEncaminhamento(tConsulta* consulta, char* nome, char* cpf);
+
+void defineMedicoConsulta(tConsulta* c, void* m);
+
+tReceita* retornaReceita(tConsulta* c);
+
+tBiopsia* retornaBiopsia(tConsulta* c);
+
+tLesao** retornaLesoes(tConsulta* l);
+
+tEncaminhamento* retornaEncaminhamento(tConsulta* c);
+
+void desalocaConsulta(tConsulta* c);
 
 #endif
